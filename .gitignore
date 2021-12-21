@@ -3,3 +3,7 @@
 .tfstate
 .hcl
 .terraform
+*.backup
+*.tfstate
+*.hcl
+*.terraform
