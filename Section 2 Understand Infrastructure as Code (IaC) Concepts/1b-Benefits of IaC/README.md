@@ -1,6 +1,6 @@
 ## This lab will create the AWS environment as shown in below diagram:
 
-![Diagram](Section 2 Understand Infrastructure as Code (IaC) Concepts/1b-Benefits of IaC/End State Diagram.png)
+![Diagram](https://github.com/noweder/Terraform/blob/main/Section%202%20Understand%20Infrastructure%20as%20Code%20(IaC)%20Concepts/1b-Benefits%20of%20IaC/End%20State%20Diagram.png)
 
 
 
