@@ -1,0 +1,1 @@
+## This labs will test the Terraform state by updating the main.tf adding an EC2 instance deploymenet
