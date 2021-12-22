@@ -7,4 +7,5 @@
 *.tfstate
 *.hcl
 *.terraform
-1b-Benefits of IaC.pdf
+.pdf
+*.pdf
