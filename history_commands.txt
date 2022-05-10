@@ -1,0 +1,1013 @@
+    1  docker images
+    2  docker system prune -a
+    3  df -h
+    4  touch resize.sh
+    5  chmod +x resize.sh 
+    6  sh resize.sh 20
+    7  df -h
+    8  sudo apt-get update && sudo apt-get install -y gnupg software-properties-common curl
+    9  curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -
+   10  sudo apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
+   11  sudo apt-get update && sudo apt-get install terraform
+   12  terraform --version
+   13  mkdir terraform-docker
+   14  cd terraform-docker/
+   15  touch main.tf
+   16  terraform init
+   17  git status
+   18  ls
+   19  terraform-docker/
+   20  ls
+   21  cd terraform-docker/
+   22  terraform init -help
+   23  cd terraform-docker/
+   24  terraform init
+   25  terraform init -upgrade
+   26  terraform init -upgrade
+   27  terraform init -upgrade
+   28  terraform init -upgrade
+   29  terraform init -upgrade
+   30  terraform init -upgrade
+   31  terraform init
+   32  terraform init
+   33  terraform init -upgrade
+   34  terraform init
+   35  terraform fmt
+   36  terraform fmt -diff
+   37  terraform plan
+   38  terraform apply
+   39  docker images
+   40  docker image ls
+   41  terraform plan
+   42  terraform destroy
+   43  docker images
+   44  terraform plan
+   45  terraform plan -out=plan1
+   46  terraform apply plan1
+   47  docker images
+   48  terraform plan --help
+   49  terraform plan -destroy
+   50  terraform fmt
+   51  docker ps
+   52  terraform plan
+   53  terraform init
+   54  terraform plan
+   55  docker images
+   56  terraform destroy
+   57  terraform init
+   58  terraform plan
+   59  docker images
+   60  docker ps
+   61  terraform apply
+   62  docker images
+   63  docker ps
+   64  curl localhost
+   65  ls /var/www/html/index.html 
+   66  curl http://169.254.169.254/latest/meta-data/public-ipv4
+   67  git status
+   68  terraform destroy --auto-approve
+   69  terraform apply --auto-approve
+   70  terraform destroy --auto-approve
+   71  sudo apt install jq
+   72  terraform show -json | jq
+   73  terraform apply --auto-approve
+   74  terraform show -json | jq
+   75  terraform state list
+   76  docker ps
+   77  terraform show
+   78  terraform show | grep ip
+   79  terraform show | grep name
+   80  terraform state list
+   81  terraform show | grep name
+   82  terraform console
+   83  ip a
+   84  terraform apply --auto-approve
+   85  terraform apply
+   86  terraform apply --auto-approve
+   87  docker ps
+   88  terraform show
+   89  terraform console
+   90  terraform apply --auto-approve
+   91  terraform output
+   92  terraform --help
+   93  terraform providers
+   94  cd terraform-docker/
+   95  terraform console
+   96  terraform output
+   97  terraform apply --auto-approve
+   98  terraform output
+   99  cd terraform-docker/
+  100  terraform state show
+  101  terraform state list
+  102  docker ps
+  103  docker images
+  104  docker container ls
+  105  docker ps -a
+  106  sudo apt-get install bash-completion
+  107  source /etc/profile
+  108  touch ~/.bashrc
+  109  terraform -install-autocomplete
+  110  cd terraform-docker/
+  111  terraform state show 
+  112  terraform state list 
+  113  terraform destroy --auto-approve
+  114  docker images
+  115  terraform apply --auto-approve
+  116  ls
+  117  ls -la
+  118  ll
+  119  ls -la
+  120  terraform plan 
+  121  terraform plan 
+  122  terraform plan 
+  123  terraform apply --auto-approve
+  124  docker ps
+  125  terraform destroy --auto-apprve
+  126  terraform destroy --auto-approve
+  127  terraform init 
+  128  terraform apply --auto-approve
+  129  terraform state list 
+  130  terraform show 
+  131  terraform apply --auto-approve
+  132  terraform apply --auto-approve
+  133  terraform plan
+  134  terraform state list
+  135  terraform destroy --auto-apprve
+  136  terraform destroy --auto-approve
+  137  terraform plan 
+  138  terraform apply --auto-approve
+  139  terraform state list
+  140  terraform plan 
+  141  terraform apply --auto-approve
+  142  terraform state list
+  143  terraform show 
+  144  terraform plan 
+  145  terraform apply --auto-approve
+  146  terraform show 
+  147  terraform apply --auto-approve
+  148  terraform destroy --auto-approve
+  149  terraform plan
+  150  terraform apply --auto-approve
+  151  terraform plan
+  152  terraform apply --auto-approve
+  153  terraform destroy --auto-approve
+  154  terraform plan 
+  155  terraform apply --auto-approve
+  156  terraform show 
+  157  terraform plan 
+  158  terraform apply --auto-approve
+  159  docker ps
+  160  terraform state list 
+  161  terraform show 
+  162  terraform apply --auto-approve
+  163  terraform destroy --auto-approve
+  164  cd terraform-docker/
+  165  terraform show 
+  166  terraform init 
+  167  terraform show
+  168  terraform plan
+  169  terraform apply --auto-approve
+  170  terraform state list
+  171  terraform console 
+  172  terraform apply --auto-approve
+  173  cd terraform-docker/
+  174  terraform state list
+  175  docker ps
+  176  docker images
+  177  terraform destroy --auto-approve
+  178  terraform console 
+  179  terraform apply 
+  180  terraform state list 
+  181  terraform console 
+  182  docker ps
+  183  terraform state list 
+  184  cd terraform-docker/
+  185  ls
+  186  terraform state list 
+  187  terraform destroy --auto-approve
+  188  terraform apply --auto-approve
+  189  terraform console 
+  190  terraform apply --auto-approve
+  191  terraform destroy 
+  192  terraform state list 
+  193  terraform apply 
+  194  terraform state list 
+  195  terraform taint random_string.random[0]
+  196  terraform plan 
+  197  terraform untaint random_string.random
+  198  terraform untaint random_string.random[0]
+  199  terraform plan 
+  200   terraform plan 
+  201  terraform apply 
+  202  terraform plan 
+  203  terraform destroy 
+  204  cd terraform-docker/
+  205  terraform state list
+  206  cd terraform-docker/
+  207  terraform destroy 
+  208  terraform plan
+  209  terraform apply --auto-approve -lock=false
+  210  terraform apply --auto-approve
+  211  terraform state list
+  212  terraform state list 
+  213  terraform show
+  214  terraform show 
+  215  docker ps -a
+  216  terraform destroy 
+  217  docker ps
+  218  terraform destroy 
+  219  docker ps
+  220  terraform apply --auto-appove -lock=false
+  221  terraform apply --auto-approve
+  222  docker ps
+  223  terraform apply --auto-approve -lock=false
+  224  terraform apply --auto-approve
+  225  docker ps 
+  226  terraform state list 
+  227  terraform show 
+  228  terraform output 
+  229  docker inspect --format="{{.ID}" nodered=1kmo
+  230  docker inspect --format="{{.ID}}" nodered=1kmo
+  231  docker inspect --format="{{.ID}}" nodered-1kmo
+  232  terraform import docker_container.nodered_container2 nodered-1kmo
+  233  terraform import docker_container.nodered_container2 nodered-1kmo
+  234  docker inspect --format="{{.ID}}" nodered=1kmo
+  235  terraform import docker_container.nodered_container2 nodered-1kmo
+  236  docker ps
+  237  docker inspect 72b063fc7252
+  238  terraform import docker_container.nodered_container2 $(docker inspect --format="{{.ID}}" nodered=1kmo)
+  239  terraform import docker_container.nodered_container2 $(docker inspect --format="{{.ID}}" nodered-1kmo)
+  240  terraform state list 
+  241  terraform plan 
+  242  terraform destroy 
+  243  terraform state list 
+  244  docker ps
+  245  terraform destroy 
+  246  terraform destroy 
+  247  terraform state list 
+  248  dockerps
+  249  docker ps
+  250  terraform apply --auto-approve
+  251  cd terraform-docker/
+  252  terraform apply --auto-approve
+  253  terraform apply --auto-approve -lock=false
+  254  terraform destroy 
+  255  docker ps
+  256  docker rm -rf
+  257  docker rm --help
+  258  docker rm -f
+  259  docker rm -f $(docker ps -a)
+  260  docker ps =a
+  261  docker ps -a
+  262  terraform apply --auto-approve -lock=false
+  263  terraform apply --auto-approve
+  264  docker ps
+  265  docker inspect nodered-xfan
+  266  terraform destroy 
+  267  terraform state list 
+  268  docker ps -a
+  269  terraform plan
+  270  cd terraform-docker/
+  271  docker ps
+  272  docker -a -q
+  273  docker images
+  274  docker images -q
+  275  docker ps -a
+  276  docker ps -aq
+  277  docker ps --help
+  278  terraform state list 
+  279  terraform refresh --help
+  280  terraform apply 
+  281  terraform state list 
+  282  docker ps -a -q
+  283  docker images -q
+  284  terraform refresh 
+  285  docker ps -a
+  286  terraform refresh 
+  287  terraform plan 
+  288  terraform refresh 
+  289  terraform refresh --help
+  290  terraform refresh -target=random_string.random
+  291  terraform refresh -target=docker_container.nodered_container
+  292  terraform refresh -target=docker_container.nodered_container
+  293  terraform apply 
+  294  terraform apply 
+  295  docker ps
+  296  terraform state list 
+  297  docker rm -f nodered-63mm 
+  298  docker ps -a
+  299  terraform state list 
+  300  terraform refresh 
+  301  terraform state list 
+  302  terraform state rm random_string.random[1]
+  303  terraform state list 
+  304  terraform plan 
+  305  terraform apply 
+  306  terraform state list 
+  307  docker ps -a
+  308  terraform destroy 
+  309  cd terraform-docker/
+  310  terraform state list 
+  311  terraform destroy 
+  312  terraform destroy 
+  313  terraform plan 
+  314  terraform plan -var ext_port=1880
+  315  history
+  316  history >> ~/history_commands.txt
+    1  docker images
+    2  docker system prune -a
+    3  df -h
+    4  touch resize.sh
+    5  chmod +x resize.sh 
+    6  sh resize.sh 20
+    7  df -h
+    8  sudo apt-get update && sudo apt-get install -y gnupg software-properties-common curl
+    9  curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -
+   10  sudo apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
+   11  sudo apt-get update && sudo apt-get install terraform
+   12  terraform --version
+   13  mkdir terraform-docker
+   14  cd terraform-docker/
+   15  touch main.tf
+   16  terraform init
+   17  git status
+   18  ls
+   19  terraform-docker/
+   20  ls
+   21  cd terraform-docker/
+   22  terraform init -help
+   23  cd terraform-docker/
+   24  terraform init
+   25  terraform init -upgrade
+   26  terraform init -upgrade
+   27  terraform init -upgrade
+   28  terraform init -upgrade
+   29  terraform init -upgrade
+   30  terraform init -upgrade
+   31  terraform init
+   32  terraform init
+   33  terraform init -upgrade
+   34  terraform init
+   35  terraform fmt
+   36  terraform fmt -diff
+   37  terraform plan
+   38  terraform apply
+   39  docker images
+   40  docker image ls
+   41  terraform plan
+   42  terraform destroy
+   43  docker images
+   44  terraform plan
+   45  terraform plan -out=plan1
+   46  terraform apply plan1
+   47  docker images
+   48  terraform plan --help
+   49  terraform plan -destroy
+   50  terraform fmt
+   51  docker ps
+   52  terraform plan
+   53  terraform init
+   54  terraform plan
+   55  docker images
+   56  terraform destroy
+   57  terraform init
+   58  terraform plan
+   59  docker images
+   60  docker ps
+   61  terraform apply
+   62  docker images
+   63  docker ps
+   64  curl localhost
+   65  ls /var/www/html/index.html 
+   66  curl http://169.254.169.254/latest/meta-data/public-ipv4
+   67  git status
+   68  terraform destroy --auto-approve
+   69  terraform apply --auto-approve
+   70  terraform destroy --auto-approve
+   71  sudo apt install jq
+   72  terraform show -json | jq
+   73  terraform apply --auto-approve
+   74  terraform show -json | jq
+   75  terraform state list
+   76  docker ps
+   77  terraform show
+   78  terraform show | grep ip
+   79  terraform show | grep name
+   80  terraform state list
+   81  terraform show | grep name
+   82  terraform console
+   83  ip a
+   84  terraform apply --auto-approve
+   85  terraform apply
+   86  terraform apply --auto-approve
+   87  docker ps
+   88  terraform show
+   89  terraform console
+   90  terraform apply --auto-approve
+   91  terraform output
+   92  terraform --help
+   93  terraform providers
+   94  cd terraform-docker/
+   95  terraform console
+   96  terraform output
+   97  terraform apply --auto-approve
+   98  terraform output
+   99  cd terraform-docker/
+  100  terraform state show
+  101  terraform state list
+  102  docker ps
+  103  docker images
+  104  docker container ls
+  105  docker ps -a
+  106  sudo apt-get install bash-completion
+  107  source /etc/profile
+  108  touch ~/.bashrc
+  109  terraform -install-autocomplete
+  110  cd terraform-docker/
+  111  terraform state show 
+  112  terraform state list 
+  113  terraform destroy --auto-approve
+  114  docker images
+  115  terraform apply --auto-approve
+  116  ls
+  117  ls -la
+  118  ll
+  119  ls -la
+  120  terraform plan 
+  121  terraform plan 
+  122  terraform plan 
+  123  terraform apply --auto-approve
+  124  docker ps
+  125  terraform destroy --auto-apprve
+  126  terraform destroy --auto-approve
+  127  terraform init 
+  128  terraform apply --auto-approve
+  129  terraform state list 
+  130  terraform show 
+  131  terraform apply --auto-approve
+  132  terraform apply --auto-approve
+  133  terraform plan
+  134  terraform state list
+  135  terraform destroy --auto-apprve
+  136  terraform destroy --auto-approve
+  137  terraform plan 
+  138  terraform apply --auto-approve
+  139  terraform state list
+  140  terraform plan 
+  141  terraform apply --auto-approve
+  142  terraform state list
+  143  terraform show 
+  144  terraform plan 
+  145  terraform apply --auto-approve
+  146  terraform show 
+  147  terraform apply --auto-approve
+  148  terraform destroy --auto-approve
+  149  terraform plan
+  150  terraform apply --auto-approve
+  151  terraform plan
+  152  terraform apply --auto-approve
+  153  terraform destroy --auto-approve
+  154  terraform plan 
+  155  terraform apply --auto-approve
+  156  terraform show 
+  157  terraform plan 
+  158  terraform apply --auto-approve
+  159  docker ps
+  160  terraform state list 
+  161  terraform show 
+  162  terraform apply --auto-approve
+  163  terraform destroy --auto-approve
+  164  cd terraform-docker/
+  165  terraform show 
+  166  terraform init 
+  167  terraform show
+  168  terraform plan
+  169  terraform apply --auto-approve
+  170  terraform state list
+  171  terraform console 
+  172  terraform apply --auto-approve
+  173  cd terraform-docker/
+  174  terraform state list
+  175  docker ps
+  176  docker images
+  177  terraform destroy --auto-approve
+  178  terraform console 
+  179  terraform apply 
+  180  terraform state list 
+  181  terraform console 
+  182  docker ps
+  183  terraform state list 
+  184  cd terraform-docker/
+  185  ls
+  186  terraform state list 
+  187  terraform destroy --auto-approve
+  188  terraform apply --auto-approve
+  189  terraform console 
+  190  terraform apply --auto-approve
+  191  terraform destroy 
+  192  terraform state list 
+  193  terraform apply 
+  194  terraform state list 
+  195  terraform taint random_string.random[0]
+  196  terraform plan 
+  197  terraform untaint random_string.random
+  198  terraform untaint random_string.random[0]
+  199  terraform plan 
+  200   terraform plan 
+  201  terraform apply 
+  202  terraform plan 
+  203  terraform destroy 
+  204  cd terraform-docker/
+  205  terraform state list
+  206  cd terraform-docker/
+  207  terraform destroy 
+  208  terraform plan
+  209  terraform apply --auto-approve -lock=false
+  210  terraform apply --auto-approve
+  211  terraform state list
+  212  terraform state list 
+  213  terraform show
+  214  terraform show 
+  215  docker ps -a
+  216  terraform destroy 
+  217  docker ps
+  218  terraform destroy 
+  219  docker ps
+  220  terraform apply --auto-appove -lock=false
+  221  terraform apply --auto-approve
+  222  docker ps
+  223  terraform apply --auto-approve -lock=false
+  224  terraform apply --auto-approve
+  225  docker ps 
+  226  terraform state list 
+  227  terraform show 
+  228  terraform output 
+  229  docker inspect --format="{{.ID}" nodered=1kmo
+  230  docker inspect --format="{{.ID}}" nodered=1kmo
+  231  docker inspect --format="{{.ID}}" nodered-1kmo
+  232  terraform import docker_container.nodered_container2 nodered-1kmo
+  233  terraform import docker_container.nodered_container2 nodered-1kmo
+  234  docker inspect --format="{{.ID}}" nodered=1kmo
+  235  terraform import docker_container.nodered_container2 nodered-1kmo
+  236  docker ps
+  237  docker inspect 72b063fc7252
+  238  terraform import docker_container.nodered_container2 $(docker inspect --format="{{.ID}}" nodered=1kmo)
+  239  terraform import docker_container.nodered_container2 $(docker inspect --format="{{.ID}}" nodered-1kmo)
+  240  terraform state list 
+  241  terraform plan 
+  242  terraform destroy 
+  243  terraform state list 
+  244  docker ps
+  245  terraform destroy 
+  246  terraform destroy 
+  247  terraform state list 
+  248  dockerps
+  249  docker ps
+  250  terraform apply --auto-approve
+  251  cd terraform-docker/
+  252  terraform apply --auto-approve
+  253  terraform apply --auto-approve -lock=false
+  254  terraform destroy 
+  255  docker ps
+  256  docker rm -rf
+  257  docker rm --help
+  258  docker rm -f
+  259  docker rm -f $(docker ps -a)
+  260  docker ps =a
+  261  docker ps -a
+  262  terraform apply --auto-approve -lock=false
+  263  terraform apply --auto-approve
+  264  docker ps
+  265  docker inspect nodered-xfan
+  266  terraform destroy 
+  267  terraform state list 
+  268  docker ps -a
+  269  terraform plan
+  270  cd terraform-docker/
+  271  docker ps
+  272  docker -a -q
+  273  docker images
+  274  docker images -q
+  275  docker ps -a
+  276  docker ps -aq
+  277  docker ps --help
+  278  terraform state list 
+  279  terraform refresh --help
+  280  terraform apply 
+  281  terraform state list 
+  282  docker ps -a -q
+  283  docker images -q
+  284  terraform refresh 
+  285  docker ps -a
+  286  terraform refresh 
+  287  terraform plan 
+  288  terraform refresh 
+  289  terraform refresh --help
+  290  terraform refresh -target=random_string.random
+  291  terraform refresh -target=docker_container.nodered_container
+  292  terraform refresh -target=docker_container.nodered_container
+  293  terraform apply 
+  294  terraform apply 
+  295  docker ps
+  296  terraform state list 
+  297  docker rm -f nodered-63mm 
+  298  docker ps -a
+  299  terraform state list 
+  300  terraform refresh 
+  301  terraform state list 
+  302  terraform state rm random_string.random[1]
+  303  terraform state list 
+  304  terraform plan 
+  305  terraform apply 
+  306  terraform state list 
+  307  docker ps -a
+  308  terraform destroy 
+  309  cd terraform-docker/
+  310  terraform state list 
+  311  terraform destroy 
+  312  terraform destroy 
+  313  terraform plan 
+  314  terraform plan -var ext_port=1880
+  315  history
+  316  history >> ~/history_commands.txt
+  317  cd ..
+  318  ls
+  319  cd ..
+  320  ls
+  321  mv history_commands.txt ~/environment/
+  322  cd environment/
+  323  ls
+  324  cat history_commands.txt 
+  325  export TF_VAR_ext_port=1880
+  326  cd terraform-docker/
+  327  terraform plan 
+  328  history >> ~/environment/history_commands.txt
+    1  docker images
+    2  docker system prune -a
+    3  df -h
+    4  touch resize.sh
+    5  chmod +x resize.sh 
+    6  sh resize.sh 20
+    7  df -h
+    8  sudo apt-get update && sudo apt-get install -y gnupg software-properties-common curl
+    9  curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -
+   10  sudo apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
+   11  sudo apt-get update && sudo apt-get install terraform
+   12  terraform --version
+   13  mkdir terraform-docker
+   14  cd terraform-docker/
+   15  touch main.tf
+   16  terraform init
+   17  git status
+   18  ls
+   19  terraform-docker/
+   20  ls
+   21  cd terraform-docker/
+   22  terraform init -help
+   23  cd terraform-docker/
+   24  terraform init
+   25  terraform init -upgrade
+   26  terraform init -upgrade
+   27  terraform init -upgrade
+   28  terraform init -upgrade
+   29  terraform init -upgrade
+   30  terraform init -upgrade
+   31  terraform init
+   32  terraform init
+   33  terraform init -upgrade
+   34  terraform init
+   35  terraform fmt
+   36  terraform fmt -diff
+   37  terraform plan
+   38  terraform apply
+   39  docker images
+   40  docker image ls
+   41  terraform plan
+   42  terraform destroy
+   43  docker images
+   44  terraform plan
+   45  terraform plan -out=plan1
+   46  terraform apply plan1
+   47  docker images
+   48  terraform plan --help
+   49  terraform plan -destroy
+   50  terraform fmt
+   51  docker ps
+   52  terraform plan
+   53  terraform init
+   54  terraform plan
+   55  docker images
+   56  terraform destroy
+   57  terraform init
+   58  terraform plan
+   59  docker images
+   60  docker ps
+   61  terraform apply
+   62  docker images
+   63  docker ps
+   64  curl localhost
+   65  ls /var/www/html/index.html 
+   66  curl http://169.254.169.254/latest/meta-data/public-ipv4
+   67  git status
+   68  terraform destroy --auto-approve
+   69  terraform apply --auto-approve
+   70  terraform destroy --auto-approve
+   71  sudo apt install jq
+   72  terraform show -json | jq
+   73  terraform apply --auto-approve
+   74  terraform show -json | jq
+   75  terraform state list
+   76  docker ps
+   77  terraform show
+   78  terraform show | grep ip
+   79  terraform show | grep name
+   80  terraform state list
+   81  terraform show | grep name
+   82  terraform console
+   83  ip a
+   84  terraform apply --auto-approve
+   85  terraform apply
+   86  terraform apply --auto-approve
+   87  docker ps
+   88  terraform show
+   89  terraform console
+   90  terraform apply --auto-approve
+   91  terraform output
+   92  terraform --help
+   93  terraform providers
+   94  cd terraform-docker/
+   95  terraform console
+   96  terraform output
+   97  terraform apply --auto-approve
+   98  terraform output
+   99  cd terraform-docker/
+  100  terraform state show
+  101  terraform state list
+  102  docker ps
+  103  docker images
+  104  docker container ls
+  105  docker ps -a
+  106  sudo apt-get install bash-completion
+  107  source /etc/profile
+  108  touch ~/.bashrc
+  109  terraform -install-autocomplete
+  110  cd terraform-docker/
+  111  terraform state show 
+  112  terraform state list 
+  113  terraform destroy --auto-approve
+  114  docker images
+  115  terraform apply --auto-approve
+  116  ls
+  117  ls -la
+  118  ll
+  119  ls -la
+  120  terraform plan 
+  121  terraform plan 
+  122  terraform plan 
+  123  terraform apply --auto-approve
+  124  docker ps
+  125  terraform destroy --auto-apprve
+  126  terraform destroy --auto-approve
+  127  terraform init 
+  128  terraform apply --auto-approve
+  129  terraform state list 
+  130  terraform show 
+  131  terraform apply --auto-approve
+  132  terraform apply --auto-approve
+  133  terraform plan
+  134  terraform state list
+  135  terraform destroy --auto-apprve
+  136  terraform destroy --auto-approve
+  137  terraform plan 
+  138  terraform apply --auto-approve
+  139  terraform state list
+  140  terraform plan 
+  141  terraform apply --auto-approve
+  142  terraform state list
+  143  terraform show 
+  144  terraform plan 
+  145  terraform apply --auto-approve
+  146  terraform show 
+  147  terraform apply --auto-approve
+  148  terraform destroy --auto-approve
+  149  terraform plan
+  150  terraform apply --auto-approve
+  151  terraform plan
+  152  terraform apply --auto-approve
+  153  terraform destroy --auto-approve
+  154  terraform plan 
+  155  terraform apply --auto-approve
+  156  terraform show 
+  157  terraform plan 
+  158  terraform apply --auto-approve
+  159  docker ps
+  160  terraform state list 
+  161  terraform show 
+  162  terraform apply --auto-approve
+  163  terraform destroy --auto-approve
+  164  cd terraform-docker/
+  165  terraform show 
+  166  terraform init 
+  167  terraform show
+  168  terraform plan
+  169  terraform apply --auto-approve
+  170  terraform state list
+  171  terraform console 
+  172  terraform apply --auto-approve
+  173  cd terraform-docker/
+  174  terraform state list
+  175  docker ps
+  176  docker images
+  177  terraform destroy --auto-approve
+  178  terraform console 
+  179  terraform apply 
+  180  terraform state list 
+  181  terraform console 
+  182  docker ps
+  183  terraform state list 
+  184  cd terraform-docker/
+  185  ls
+  186  terraform state list 
+  187  terraform destroy --auto-approve
+  188  terraform apply --auto-approve
+  189  terraform console 
+  190  terraform apply --auto-approve
+  191  terraform destroy 
+  192  terraform state list 
+  193  terraform apply 
+  194  terraform state list 
+  195  terraform taint random_string.random[0]
+  196  terraform plan 
+  197  terraform untaint random_string.random
+  198  terraform untaint random_string.random[0]
+  199  terraform plan 
+  200   terraform plan 
+  201  terraform apply 
+  202  terraform plan 
+  203  terraform destroy 
+  204  cd terraform-docker/
+  205  terraform state list
+  206  cd terraform-docker/
+  207  terraform destroy 
+  208  terraform plan
+  209  terraform apply --auto-approve -lock=false
+  210  terraform apply --auto-approve
+  211  terraform state list
+  212  terraform state list 
+  213  terraform show
+  214  terraform show 
+  215  docker ps -a
+  216  terraform destroy 
+  217  docker ps
+  218  terraform destroy 
+  219  docker ps
+  220  terraform apply --auto-appove -lock=false
+  221  terraform apply --auto-approve
+  222  docker ps
+  223  terraform apply --auto-approve -lock=false
+  224  terraform apply --auto-approve
+  225  docker ps 
+  226  terraform state list 
+  227  terraform show 
+  228  terraform output 
+  229  docker inspect --format="{{.ID}" nodered=1kmo
+  230  docker inspect --format="{{.ID}}" nodered=1kmo
+  231  docker inspect --format="{{.ID}}" nodered-1kmo
+  232  terraform import docker_container.nodered_container2 nodered-1kmo
+  233  terraform import docker_container.nodered_container2 nodered-1kmo
+  234  docker inspect --format="{{.ID}}" nodered=1kmo
+  235  terraform import docker_container.nodered_container2 nodered-1kmo
+  236  docker ps
+  237  docker inspect 72b063fc7252
+  238  terraform import docker_container.nodered_container2 $(docker inspect --format="{{.ID}}" nodered=1kmo)
+  239  terraform import docker_container.nodered_container2 $(docker inspect --format="{{.ID}}" nodered-1kmo)
+  240  terraform state list 
+  241  terraform plan 
+  242  terraform destroy 
+  243  terraform state list 
+  244  docker ps
+  245  terraform destroy 
+  246  terraform destroy 
+  247  terraform state list 
+  248  dockerps
+  249  docker ps
+  250  terraform apply --auto-approve
+  251  cd terraform-docker/
+  252  terraform apply --auto-approve
+  253  terraform apply --auto-approve -lock=false
+  254  terraform destroy 
+  255  docker ps
+  256  docker rm -rf
+  257  docker rm --help
+  258  docker rm -f
+  259  docker rm -f $(docker ps -a)
+  260  docker ps =a
+  261  docker ps -a
+  262  terraform apply --auto-approve -lock=false
+  263  terraform apply --auto-approve
+  264  docker ps
+  265  docker inspect nodered-xfan
+  266  terraform destroy 
+  267  terraform state list 
+  268  docker ps -a
+  269  terraform plan
+  270  cd terraform-docker/
+  271  docker ps
+  272  docker -a -q
+  273  docker images
+  274  docker images -q
+  275  docker ps -a
+  276  docker ps -aq
+  277  docker ps --help
+  278  terraform state list 
+  279  terraform refresh --help
+  280  terraform apply 
+  281  terraform state list 
+  282  docker ps -a -q
+  283  docker images -q
+  284  terraform refresh 
+  285  docker ps -a
+  286  terraform refresh 
+  287  terraform plan 
+  288  terraform refresh 
+  289  terraform refresh --help
+  290  terraform refresh -target=random_string.random
+  291  terraform refresh -target=docker_container.nodered_container
+  292  terraform refresh -target=docker_container.nodered_container
+  293  terraform apply 
+  294  terraform apply 
+  295  docker ps
+  296  terraform state list 
+  297  docker rm -f nodered-63mm 
+  298  docker ps -a
+  299  terraform state list 
+  300  terraform refresh 
+  301  terraform state list 
+  302  terraform state rm random_string.random[1]
+  303  terraform state list 
+  304  terraform plan 
+  305  terraform apply 
+  306  terraform state list 
+  307  docker ps -a
+  308  terraform destroy 
+  309  cd terraform-docker/
+  310  terraform state list 
+  311  terraform destroy 
+  312  terraform destroy 
+  313  terraform plan 
+  314  terraform plan -var ext_port=1880
+  315  history
+  316  history >> ~/history_commands.txt
+  317  cd ..
+  318  ls
+  319  cd ..
+  320  ls
+  321  mv history_commands.txt ~/environment/
+  322  cd environment/
+  323  ls
+  324  cat history_commands.txt 
+  325  export TF_VAR_ext_port=1880
+  326  cd terraform-docker/
+  327  terraform plan 
+  328  history >> ~/environment/history_commands.txt
+  329  unset TF_VAR_ext_port
+  330  terraform plan 
+  331  terraform plan 
+  332  terraform plan 
+  333  terraform p
+  334  terraform plan 
+  335  terraform apply 
+  336  cd terraform-docker/
+  337  terraform state list 
+  338  docker ps
+  339  terraform state list 
+  340  terraform state list 
+  341  terraform plan
+  342  terraform destroy 
+  343  terraform plan
+  344  terraform plan
+  345  terraform destroy 
+  346  terraform p
+  347  terraform plan 
+  348  terraform plan 
+  349  terraform apply 
+  350  docker ps
+  351  terraform destroy 
+  352  cd terraform-docker/
+  353  ls
+  354  terraform plan 
+  355  terraform destroy 
+  356  terraform apply 
+  357  terraform state list 
+  358  terraform show | grep 1880
+  359  terraform destroy 
+  360  terraform plan
+  361  terraform state list 
+  362  terraform plan
+  363  terraform plan --help
+  364  terraform plan --var-file=west.tfvars
+  365  terraform plan --var-file=central.tfvars
+  366  terraform plan -var ext_port=2000
+  367  terraform plan --help
+  368  history
+  369  history >> ~/environment/history_commands.txt
