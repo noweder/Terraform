@@ -9,3 +9,7 @@
 *.terraform
 .pdf
 *.pdf
+*.tfstate.d
+noderedvol/
+*.c9
+resize.sh
