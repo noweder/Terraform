@@ -1,0 +1,11 @@
+*.exe
+.backup
+.tfstate
+.hcl
+.terraform
+*.backup
+*.tfstate
+*.hcl
+*.terraform
+.pdf
+*.pdf
