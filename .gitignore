@@ -13,3 +13,6 @@
 noderedvol/
 *.c9
 resize.sh
+terraform.tfstate
+terraform.tfstate.backup
+terraform.tfvars
