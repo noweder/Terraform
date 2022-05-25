@@ -38,7 +38,3 @@ variable "int_port" {
     error_message = "The internal port must be 1880."
   }
 }
-
-# locals {
-#   container_count = length(var.ext_port[terraform.workspace])
-# }

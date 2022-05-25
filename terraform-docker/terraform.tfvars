@@ -4,7 +4,7 @@ ext_port = {
     prod = [1880]
   }
   influxdb = {
-    dev  = [8186]
+    dev  = [8186, 8187]
     prod = [8086]
   }
 }
