@@ -7,4 +7,8 @@ ext_port = {
     dev  = [8186, 8187]
     prod = [8086]
   }
+  grafana = {
+    dev  = [3100]
+    prod = [3000]
+  }
 }
