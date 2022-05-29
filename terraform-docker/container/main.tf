@@ -6,7 +6,7 @@ resource "random_string" "random" {
 
 }
 
-resource "docker_container" "new_container" {
+resource "docker_container" "app_container" {
   count = var.count_in
   name  = join("-", [var.name_in, terraform.workspace, random_string.random[count.index].result])
   image = var.image_in
