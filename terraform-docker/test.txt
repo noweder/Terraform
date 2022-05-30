@@ -1,0 +1,4 @@
+grafana-dev-v8gl: 172.17.0.2:3100
+grafana-dev-akjt: 172.17.0.3:3101
+influxdb-dev-igjt: 172.17.0.4:8186
+nodered-dev-izl0: 172.17.0.5:1980
