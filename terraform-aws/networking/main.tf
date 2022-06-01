@@ -16,7 +16,7 @@ resource "aws_vpc" "noweder_vpc" {
 }
 
 resource "aws_subnet" "noweder_public_subnet" {
-  count                   = length(var.public_cidrs)
+  count                   = var.public_sn_count
   vpc_id                  = aws_vpc.noweder_vpc.id
   cidr_block              = var.public_cidrs[count.index]
   map_public_ip_on_launch = true
@@ -29,7 +29,7 @@ resource "aws_subnet" "noweder_public_subnet" {
 }
 
 resource "aws_subnet" "noweder_private_subnet" {
-  count                   = length(var.private_cidrs)
+  count                   = var.private_sn_count
   vpc_id                  = aws_vpc.noweder_vpc.id
   cidr_block              = var.private_cidrs[count.index]
   map_public_ip_on_launch = false
