@@ -8,7 +8,7 @@ resource "random_integer" "random" {
 }
 
 resource "random_shuffle" "az_list" {
-  input = data.aws_availability_zones.available.names
+  input        = data.aws_availability_zones.available.names
   result_count = var.max_subnets
 }
 
@@ -35,6 +35,12 @@ resource "aws_subnet" "noweder_public_subnet" {
 
 }
 
+resource "aws_route_table_association" "noweder_public_assoc" {
+  count          = var.public_sn_count
+  subnet_id      = aws_subnet.noweder_public_subnet.*.id[count.index]
+  route_table_id = aws_route_table.noweder_public_rt.id
+}
+
 resource "aws_subnet" "noweder_private_subnet" {
   count                   = var.private_sn_count
   vpc_id                  = aws_vpc.noweder_vpc.id
@@ -46,3 +52,34 @@ resource "aws_subnet" "noweder_private_subnet" {
     Name = "noweder_private_${count.index + 1}"
   }
 }
+
+resource "aws_internet_gateway" "noweder_internet_gateway" {
+  vpc_id = aws_vpc.noweder_vpc.id
+
+  tags = {
+    Name = "noweder_igw"
+  }
+}
+
+resource "aws_route_table" "noweder_public_rt" {
+  vpc_id = aws_vpc.noweder_vpc.id
+
+  tags = {
+    Name = "noweder_public"
+  }
+}
+
+resource "aws_route" "default_route" {
+  route_table_id         = aws_route_table.noweder_public_rt.id
+  destination_cidr_block = "0.0.0.0/0"
+  gateway_id             = aws_internet_gateway.noweder_internet_gateway.id
+}
+
+resource "aws_default_route_table" "noweder_private_rt" {
+  default_route_table_id = aws_vpc.noweder_vpc.default_route_table_id
+
+  tags = {
+    Name = "noweder_private"
+  }
+}
+
