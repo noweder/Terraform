@@ -1,4 +1,5 @@
 *.exe
+#./terraform-aws/terraform.tfvars
 *.backup
 backup/
 *.tfstate
