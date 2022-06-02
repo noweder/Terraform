@@ -20,6 +20,10 @@ resource "aws_vpc" "noweder_vpc" {
   tags = {
     Name = "noweder_vpc-${random_integer.random.id}"
   }
+
+  lifecycle {
+    create_before_destroy = true
+  }
 }
 
 resource "aws_subnet" "noweder_public_subnet" {
