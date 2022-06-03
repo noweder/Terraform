@@ -110,3 +110,13 @@ resource "aws_security_group" "noweder_sg" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 }
+
+resource "aws_db_subnet_group" "noweder_rds_subnetgroup" {
+  count      = var.db_subnet_group == true ? 1 : 0
+  name       = "noweder_rds_subnetgroup"
+  subnet_ids = aws_subnet.noweder_private_subnet.*.id
+
+  tags = {
+    Name = "noweder_rds_sng"
+  }
+}
