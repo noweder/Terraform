@@ -5,9 +5,9 @@ output "vpc_id" {
 }
 
 output "db_subnet_group_name" {
-    value = aws_db_subnet_group.noweder_rds_subnetgroup.*.name
+  value = aws_db_subnet_group.noweder_rds_subnetgroup.*.name
 }
 
 output "db_security_group" {
-    value = [aws_security_group.noweder_sg["rds"].id]
+  value = [aws_security_group.noweder_sg["rds"].id]
 }
