@@ -49,6 +49,6 @@ module "compute" {
   public_sg       = module.networking.public_sg
   public_subnets  = module.networking.public_subnets
   vol_size        = 10
-  key_name        = "nowederkey"
+  key_name        = "nowederkeynew"
   public_key_path = "/home/ubuntu/.ssh/keynoweder.pub"
 }
