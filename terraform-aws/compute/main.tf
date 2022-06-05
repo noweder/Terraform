@@ -25,6 +25,11 @@ resource "random_id" "noweder_node_id" {
   count       = var.instance_count
 }
 
+resource "aws_key_pair" "noweder_auth" {
+  key_name   = var.key_name
+  public_key = file(var.public_key_path)
+}
+
 resource "aws_instance" "noweder_node" {
   count         = var.instance_count # 1
   instance_type = var.instance_type  # t3.micro
@@ -33,7 +38,7 @@ resource "aws_instance" "noweder_node" {
     Name = "noweder_node-${random_id.noweder_node_id[count.index].dec}"
   }
 
-  # key_name = ""
+  key_name               = aws_key_pair.noweder_auth.id
   vpc_security_group_ids = [var.public_sg]
   subnet_id              = var.public_subnets[count.index]
   # user_data = ""

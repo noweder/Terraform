@@ -43,10 +43,12 @@ module "loadbalancing" {
 }
 
 module "compute" {
-  source         = "./compute"
-  instance_count = 1
-  instance_type  = "t3.micro"
-  public_sg      = module.networking.public_sg
-  public_subnets = module.networking.public_subnets
-  vol_size       = 10
+  source          = "./compute"
+  instance_count  = 1
+  instance_type   = "t3.micro"
+  public_sg       = module.networking.public_sg
+  public_subnets  = module.networking.public_subnets
+  vol_size        = 10
+  key_name        = "nowederkey"
+  public_key_path = "/home/ubuntu/.ssh/keynoweder.pub"
 }
