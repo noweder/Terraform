@@ -8,16 +8,6 @@ data "aws_ami" "server_ami" {
     name   = "name"
     values = ["ubuntu/images/hvm-ssd/ubuntu-bionic-18.04-amd64-server-20220411"] # free tier version
   }
-
-  #   filter {
-  #         name   = "root-device-type"
-  #         values = ["ebs"]
-  #   }
-
-  #   filter {
-  #         name   = "virtualization-type"
-  #         values = ["hvm"]
-  #   }
 }
 
 resource "random_id" "noweder_node_id" {
@@ -44,7 +34,16 @@ resource "aws_instance" "noweder_node" {
   key_name               = aws_key_pair.noweder_auth.id
   vpc_security_group_ids = [var.public_sg]
   subnet_id              = var.public_subnets[count.index]
-  # user_data = ""
+  user_data = templatefile(var.user_data_path,
+    {
+      nodename    = "noweder-${random_id.noweder_node_id[count.index].dec}"
+      db_endpoint = var.db_endpoint
+      dbuser      = var.dbuser
+      dbpass      = var.dbpassword
+      dbname      = var.dbname
+    }
+
+  )
   root_block_device {
     volume_size = var.vol_size # 10
   }
