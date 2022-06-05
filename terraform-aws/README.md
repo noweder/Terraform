@@ -1,5 +1,6 @@
-# Terraform on AWS
+# Terraform with AWS
 
+## Building a Kubenetes cluster using k3s with NGINX deployment
 After running `terraform apply`, access the EC2 instance `ssh -i ~/.ssh/keynoweder ubuntu@<EC2-public-ip>` and then create a new file named `deployment.yml` and inserting below code:
 ```
 apiVersion: apps/v1
