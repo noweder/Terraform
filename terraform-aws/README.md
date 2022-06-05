@@ -1,6 +1,6 @@
 # Terraform on AWS
 
-After running `terraform apply`, access the EC2 instance `ssh -i ~/.ssh/keynoweder ubuntu@35.86.224.216` and then create a new file named `deployment.yml` and inserting below code:
+After running `terraform apply`, access the EC2 instance `ssh -i ~/.ssh/keynoweder ubuntu@<EC2-public-ip>` and then create a new file named `deployment.yml` and inserting below code:
 ```
 apiVersion: apps/v1
 kind: Deployment
