@@ -49,9 +49,9 @@ resource "aws_instance" "noweder_node" {
   }
   provisioner "remote-exec" {
     connection {
-      type = "ssh"
-      user = "ubuntu"
-      host = self.public_ip
+      type        = "ssh"
+      user        = "ubuntu"
+      host        = self.public_ip
       private_key = file(var.private_key_path)
     }
     script = "${path.cwd}/delay.sh"
@@ -59,18 +59,18 @@ resource "aws_instance" "noweder_node" {
   provisioner "local-exec" {
     command = templatefile("${path.cwd}/scp_script.tpl",
       {
-        nodeip   = self.public_ip
-        k3s_path = "${path.cwd}/../"
-        nodename = self.tags.Name
+        nodeip           = self.public_ip
+        k3s_path         = "${path.cwd}/../"
+        nodename         = self.tags.Name
         private_key_path = file(var.private_key_path)
       }
     )
   }
   provisioner "local-exec" {
-    when = destroy
+    when    = destroy
     command = "rm -f ${path.cwd}/../k3s-${self.tags.Name}.yaml"
-    }
   }
+}
 
 resource "aws_lb_target_group_attachment" "noweder_tg_attach" {
   count            = var.instance_count
