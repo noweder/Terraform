@@ -54,7 +54,7 @@ resource "aws_instance" "noweder_node" {
       host        = self.public_ip
       private_key = file(var.private_key_path)
     }
-    script = "${path.cwd}/delay.sh"
+    script = "${path.root}/delay.sh"
   }
   provisioner "local-exec" {
     command = templatefile("${path.cwd}/scp_script.tpl",
@@ -62,13 +62,13 @@ resource "aws_instance" "noweder_node" {
         nodeip           = self.public_ip
         k3s_path         = "${path.cwd}/../"
         nodename         = self.tags.Name
-        private_key_path = file(var.private_key_path)
+        private_key_path = var.private_key_path
       }
     )
   }
   provisioner "local-exec" {
     when    = destroy
-    command = "rm -f ${path.cwd}/../k3s-${self.tags.Name}.yaml"
+    command = "rm -f ${path.cwd}/../k3s-mtc_node-*"
   }
 }
 

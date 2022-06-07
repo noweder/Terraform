@@ -20,3 +20,4 @@ terraform.tfstate.backup
 kubectl
 kubectl.sha256
 k3s-noweder_node-*.yaml
+.terraform.tfstate.lock
