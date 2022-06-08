@@ -5,7 +5,6 @@ locals {
       image           = var.image["nodered"][terraform.workspace]
       int             = 1880
       ext             = var.ext_port["nodered"][terraform.workspace]
-      container_path  = "/data"
       volumes = [
         { container_path_each = "/data  " }
       ]
