@@ -68,7 +68,7 @@ resource "aws_instance" "noweder_node" {
   }
   provisioner "local-exec" {
     when    = destroy
-    command = "rm -f ${path.cwd}/../k3s-mtc_node-*"
+    command = "rm -f ${path.cwd}/../k3s-noweder_node-*"
   }
 }
 
