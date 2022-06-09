@@ -1,1 +1,1 @@
-# Personal projects I have created during my Terraform learning journey
+# Personal projects created during my Terraform learning journey

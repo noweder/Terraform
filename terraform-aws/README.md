@@ -14,4 +14,4 @@ To deploy the nginx container, run `kubectl create -f deployment.yaml` from this
 
 To check the running container/s, run `kubectl get pods`
 
-To access the nginx web server, copy the `load_balancer_endpoint` value and run it into your web browser. You should get the nginx welcoming back!
+To access the nginx web server, copy the `load_balancer_endpoint` value and run it into your web browser. You should get the nginx welcoming page!
