@@ -2,11 +2,4 @@
 
 This terraform deployment depends on the `terraform-aws` deployment. please make sure to run that one first.
 
-Then, make sure to update the below `config_path` inside `providers.tf` file with the correct name of the generated .yaml 
-
-```
-provider "kubernetes" {
-  # Configuration options
-  config_path = "../k3s-noweder_node-20359.yaml"
-}
-```
+Once the apply is complete and outputs are displayed, copy the value of `kubeconfig` output displayed in `terraform-aws` and run it as a command in your CLI.
