@@ -1,3 +1,7 @@
+locals {
+  config = data.terraform_remote_state.kubeconfig.outputs.kubeconfig
+}
+
 terraform {
   required_providers {
     kubernetes = {
@@ -9,5 +13,5 @@ terraform {
 
 provider "kubernetes" {
   # Configuration options
-  config_path = "../k3s-noweder_node-20359.yaml"
+  config_path = split("=", local.config[0])[1]
 }
