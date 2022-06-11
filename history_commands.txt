@@ -1011,3 +1011,1963 @@
   367  terraform plan --help
   368  history
   369  history >> ~/environment/history_commands.txt
+    1  docker images
+    2  docker system prune -a
+    3  df -h
+    4  touch resize.sh
+    5  chmod +x resize.sh 
+    6  sh resize.sh 20
+    7  df -h
+    8  sudo apt-get update && sudo apt-get install -y gnupg software-properties-common curl
+    9  curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -
+   10  sudo apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
+   11  sudo apt-get update && sudo apt-get install terraform
+   12  terraform --version
+   13  mkdir terraform-docker
+   14  cd terraform-docker/
+   15  touch main.tf
+   16  terraform init
+   17  git status
+   18  ls
+   19  terraform-docker/
+   20  ls
+   21  cd terraform-docker/
+   22  terraform init -help
+   23  cd terraform-docker/
+   24  terraform init
+   25  terraform init -upgrade
+   26  terraform init -upgrade
+   27  terraform init -upgrade
+   28  terraform init -upgrade
+   29  terraform init -upgrade
+   30  terraform init -upgrade
+   31  terraform init
+   32  terraform init
+   33  terraform init -upgrade
+   34  terraform init
+   35  terraform fmt
+   36  terraform fmt -diff
+   37  terraform plan
+   38  terraform apply
+   39  docker images
+   40  docker image ls
+   41  terraform plan
+   42  terraform destroy
+   43  docker images
+   44  terraform plan
+   45  terraform plan -out=plan1
+   46  terraform apply plan1
+   47  docker images
+   48  terraform plan --help
+   49  terraform plan -destroy
+   50  terraform fmt
+   51  docker ps
+   52  terraform plan
+   53  terraform init
+   54  terraform plan
+   55  docker images
+   56  terraform destroy
+   57  terraform init
+   58  terraform plan
+   59  docker images
+   60  docker ps
+   61  terraform apply
+   62  docker images
+   63  docker ps
+   64  curl localhost
+   65  ls /var/www/html/index.html 
+   66  curl http://169.254.169.254/latest/meta-data/public-ipv4
+   67  git status
+   68  terraform destroy --auto-approve
+   69  terraform apply --auto-approve
+   70  terraform destroy --auto-approve
+   71  sudo apt install jq
+   72  terraform show -json | jq
+   73  terraform apply --auto-approve
+   74  terraform show -json | jq
+   75  terraform state list
+   76  docker ps
+   77  terraform show
+   78  terraform show | grep ip
+   79  terraform show | grep name
+   80  terraform state list
+   81  terraform show | grep name
+   82  terraform console
+   83  ip a
+   84  terraform apply --auto-approve
+   85  terraform apply
+   86  terraform apply --auto-approve
+   87  docker ps
+   88  terraform show
+   89  terraform console
+   90  terraform apply --auto-approve
+   91  terraform output
+   92  terraform --help
+   93  terraform providers
+   94  cd terraform-docker/
+   95  terraform console
+   96  terraform output
+   97  terraform apply --auto-approve
+   98  terraform output
+   99  cd terraform-docker/
+  100  terraform state show
+  101  terraform state list
+  102  docker ps
+  103  docker images
+  104  docker container ls
+  105  docker ps -a
+  106  sudo apt-get install bash-completion
+  107  source /etc/profile
+  108  touch ~/.bashrc
+  109  terraform -install-autocomplete
+  110  cd terraform-docker/
+  111  terraform state show 
+  112  terraform state list 
+  113  terraform destroy --auto-approve
+  114  docker images
+  115  terraform apply --auto-approve
+  116  ls
+  117  ls -la
+  118  ll
+  119  ls -la
+  120  terraform plan 
+  121  terraform plan 
+  122  terraform plan 
+  123  terraform apply --auto-approve
+  124  docker ps
+  125  terraform destroy --auto-apprve
+  126  terraform destroy --auto-approve
+  127  terraform init 
+  128  terraform apply --auto-approve
+  129  terraform state list 
+  130  terraform show 
+  131  terraform apply --auto-approve
+  132  terraform apply --auto-approve
+  133  terraform plan
+  134  terraform state list
+  135  terraform destroy --auto-apprve
+  136  terraform destroy --auto-approve
+  137  terraform plan 
+  138  terraform apply --auto-approve
+  139  terraform state list
+  140  terraform plan 
+  141  terraform apply --auto-approve
+  142  terraform state list
+  143  terraform show 
+  144  terraform plan 
+  145  terraform apply --auto-approve
+  146  terraform show 
+  147  terraform apply --auto-approve
+  148  terraform destroy --auto-approve
+  149  terraform plan
+  150  terraform apply --auto-approve
+  151  terraform plan
+  152  terraform apply --auto-approve
+  153  terraform destroy --auto-approve
+  154  terraform plan 
+  155  terraform apply --auto-approve
+  156  terraform show 
+  157  terraform plan 
+  158  terraform apply --auto-approve
+  159  docker ps
+  160  terraform state list 
+  161  terraform show 
+  162  terraform apply --auto-approve
+  163  terraform destroy --auto-approve
+  164  cd terraform-docker/
+  165  terraform show 
+  166  terraform init 
+  167  terraform show
+  168  terraform plan
+  169  terraform apply --auto-approve
+  170  terraform state list
+  171  terraform console 
+  172  terraform apply --auto-approve
+  173  cd terraform-docker/
+  174  terraform state list
+  175  docker ps
+  176  docker images
+  177  terraform destroy --auto-approve
+  178  terraform console 
+  179  terraform apply 
+  180  terraform state list 
+  181  terraform console 
+  182  docker ps
+  183  terraform state list 
+  184  cd terraform-docker/
+  185  ls
+  186  terraform state list 
+  187  terraform destroy --auto-approve
+  188  terraform apply --auto-approve
+  189  terraform console 
+  190  terraform apply --auto-approve
+  191  terraform destroy 
+  192  terraform state list 
+  193  terraform apply 
+  194  terraform state list 
+  195  terraform taint random_string.random[0]
+  196  terraform plan 
+  197  terraform untaint random_string.random
+  198  terraform untaint random_string.random[0]
+  199  terraform plan 
+  200   terraform plan 
+  201  terraform apply 
+  202  terraform plan 
+  203  terraform destroy 
+  204  cd terraform-docker/
+  205  terraform state list
+  206  cd terraform-docker/
+  207  terraform destroy 
+  208  terraform plan
+  209  terraform apply --auto-approve -lock=false
+  210  terraform apply --auto-approve
+  211  terraform state list
+  212  terraform state list 
+  213  terraform show
+  214  terraform show 
+  215  docker ps -a
+  216  terraform destroy 
+  217  docker ps
+  218  terraform destroy 
+  219  docker ps
+  220  terraform apply --auto-appove -lock=false
+  221  terraform apply --auto-approve
+  222  docker ps
+  223  terraform apply --auto-approve -lock=false
+  224  terraform apply --auto-approve
+  225  docker ps 
+  226  terraform state list 
+  227  terraform show 
+  228  terraform output 
+  229  docker inspect --format="{{.ID}" nodered=1kmo
+  230  docker inspect --format="{{.ID}}" nodered=1kmo
+  231  docker inspect --format="{{.ID}}" nodered-1kmo
+  232  terraform import docker_container.nodered_container2 nodered-1kmo
+  233  terraform import docker_container.nodered_container2 nodered-1kmo
+  234  docker inspect --format="{{.ID}}" nodered=1kmo
+  235  terraform import docker_container.nodered_container2 nodered-1kmo
+  236  docker ps
+  237  docker inspect 72b063fc7252
+  238  terraform import docker_container.nodered_container2 $(docker inspect --format="{{.ID}}" nodered=1kmo)
+  239  terraform import docker_container.nodered_container2 $(docker inspect --format="{{.ID}}" nodered-1kmo)
+  240  terraform state list 
+  241  terraform plan 
+  242  terraform destroy 
+  243  terraform state list 
+  244  docker ps
+  245  terraform destroy 
+  246  terraform destroy 
+  247  terraform state list 
+  248  dockerps
+  249  docker ps
+  250  terraform apply --auto-approve
+  251  cd terraform-docker/
+  252  terraform apply --auto-approve
+  253  terraform apply --auto-approve -lock=false
+  254  terraform destroy 
+  255  docker ps
+  256  docker rm -rf
+  257  docker rm --help
+  258  docker rm -f
+  259  docker rm -f $(docker ps -a)
+  260  docker ps =a
+  261  docker ps -a
+  262  terraform apply --auto-approve -lock=false
+  263  terraform apply --auto-approve
+  264  docker ps
+  265  docker inspect nodered-xfan
+  266  terraform destroy 
+  267  terraform state list 
+  268  docker ps -a
+  269  terraform plan
+  270  cd terraform-docker/
+  271  docker ps
+  272  docker -a -q
+  273  docker images
+  274  docker images -q
+  275  docker ps -a
+  276  docker ps -aq
+  277  docker ps --help
+  278  terraform state list 
+  279  terraform refresh --help
+  280  terraform apply 
+  281  terraform state list 
+  282  docker ps -a -q
+  283  docker images -q
+  284  terraform refresh 
+  285  docker ps -a
+  286  terraform refresh 
+  287  terraform plan 
+  288  terraform refresh 
+  289  terraform refresh --help
+  290  terraform refresh -target=random_string.random
+  291  terraform refresh -target=docker_container.nodered_container
+  292  terraform refresh -target=docker_container.nodered_container
+  293  terraform apply 
+  294  terraform apply 
+  295  docker ps
+  296  terraform state list 
+  297  docker rm -f nodered-63mm 
+  298  docker ps -a
+  299  terraform state list 
+  300  terraform refresh 
+  301  terraform state list 
+  302  terraform state rm random_string.random[1]
+  303  terraform state list 
+  304  terraform plan 
+  305  terraform apply 
+  306  terraform state list 
+  307  docker ps -a
+  308  terraform destroy 
+  309  cd terraform-docker/
+  310  terraform state list 
+  311  terraform destroy 
+  312  terraform destroy 
+  313  terraform plan 
+  314  terraform plan -var ext_port=1880
+  315  history
+  316  history >> ~/history_commands.txt
+  317  cd ..
+  318  ls
+  319  cd ..
+  320  ls
+  321  mv history_commands.txt ~/environment/
+  322  cd environment/
+  323  ls
+  324  cat history_commands.txt 
+  325  export TF_VAR_ext_port=1880
+  326  cd terraform-docker/
+  327  terraform plan 
+  328  history >> ~/environment/history_commands.txt
+  329  unset TF_VAR_ext_port
+  330  terraform plan 
+  331  terraform plan 
+  332  terraform plan 
+  333  terraform p
+  334  terraform plan 
+  335  terraform apply 
+  336  cd terraform-docker/
+  337  terraform state list 
+  338  docker ps
+  339  terraform state list 
+  340  terraform state list 
+  341  terraform plan
+  342  terraform destroy 
+  343  terraform plan
+  344  terraform plan
+  345  terraform destroy 
+  346  terraform p
+  347  terraform plan 
+  348  terraform plan 
+  349  terraform apply 
+  350  docker ps
+  351  terraform destroy 
+  352  cd terraform-docker/
+  353  ls
+  354  terraform plan 
+  355  terraform destroy 
+  356  terraform apply 
+  357  terraform state list 
+  358  terraform show | grep 1880
+  359  terraform destroy 
+  360  terraform plan
+  361  terraform state list 
+  362  terraform plan
+  363  terraform plan --help
+  364  terraform plan --var-file=west.tfvars
+  365  terraform plan --var-file=central.tfvars
+  366  terraform plan -var ext_port=2000
+  367  terraform plan --help
+  368  history
+  369  history >> ~/environment/history_commands.txt
+  370  cat ~/environment/history_commands.txt 
+  371  hostname -f
+  372  hostname
+  373  hostname --help
+  374  hostname -i
+  375  terraform plan -var ext_port=2000 -var-file=west.tfvars
+  376  terraform plan -var-file=west.tfvars -var ext_port=2000
+  377  terraform destroy 
+  378  terraform destroy 
+  379  terraform state list 
+  380  terraform destroy --auto-approve
+  381  terraform apply 
+  382  terraform destroy 
+  383  terraform apply
+  384  terraform output 
+  385  terraform console 
+  386  docker ps -a
+  387  terraform show | grep external
+  388  terraform show
+  389  terraform state list 
+  390  terraform destroy 
+  391  terraform plan 
+  392  terraform state list 
+  393  cd terraform-docker/
+  394  id
+  395  groups
+  396  cat /etc/group
+  397  terraform plan 
+  398  terraform plan 
+  399  terraform state list 
+  400  terraform plan 
+  401  │   terraform init -upgrade
+  402  terraform init -upgrade
+  403  terraform plan 
+  404  terraform apply 
+  405  terraform state list 
+  406  terraform apply 
+  407  terraform destroy 
+  408  terraform state list 
+  409  terraform apply 
+  410  terraform state list 
+  411  terraform destroy 
+  412  terraform apply 
+  413  pwd
+  414  terraform apply 
+  415  terraform destroy 
+  416  curl http://169.254.169.254/meta-data/
+  417  curl http://169.254.169.254/metadata/
+  418  curl http://169.254.169.254/latest/meta-data
+  419  curl http://169.254.169.254/latest/meta-data/public-ipv4
+  420  terraform state list 
+  421  cd terraform-docker/
+  422  terraform state list 
+  423  terraform apply 
+  424  terraform destroy 
+  425  terraform apply 
+  426  terraform plan 
+  427  terraform destroy 
+  428  terraform plan 
+  429  terraform plan 
+  430  terraform plan | grep external
+  431  terraform plan | grep external
+  432  terraform plan | grep external
+  433  terraform plan | grep external
+  434  terraform plan | grep external
+  435  terraform plan | grep external
+  436  terraform plan | grep external
+  437  terraform plan | grep external
+  438  terraform apply 
+  439  terraform destroy 
+  440  terraform plan
+  441  terraform plan
+  442  terraform plan
+  443  terraform plan | grep validation
+  444  terraform plan | grep condition
+  445  terraform console 
+  446  terraform plan 
+  447  terraform plan 
+  448  terraform plan 
+  449  terraform state list 
+  450  terraform console 
+  451  terraform plan 
+  452  terraform apply 
+  453  terraform destroy 
+  454  terraform apply 
+  455  terraform destroy 
+  456  terraform console 
+  457  terraform plan -var="env=prod" | grep name
+  458  terraform plan | grep name
+  459  terraform destroy 
+  460  terraform plan | grep external
+  461  terraform plan -var="env=prod" | grep external
+  462  terraform plan | grep external
+  463  terraform plan | grep external
+  464  terraform plan | grep external
+  465  terraform plan | grep external
+  466  terraform plan | grep external
+  467  terraform plan -var="env=prod" | grep external
+  468  cd terraform-docker/
+  469  terraform state list 
+  470  terraform workspace list 
+  471  terraform workspace show 
+  472  terraform workspace new dev
+  473  terraform workspace show 
+  474  terraform workspace new prod
+  475   terraform workspace select dev
+  476  terraform apply 
+  477  terraform apply --auto-approve -var="env=dev"
+  478  docker image ls
+  479  terraform workspace select prod 
+  480  terraform apply --auto-approve -var="env=prod"
+  481  docker ps -a
+  482  docker ps -a
+  483  docker ps -a
+  484  docker ps -a
+  485  docker image ls
+  486  terraform destroy 
+  487  terraform workspace select dev
+  488  terraform destroy 
+  489  terraform workspace show 
+  490  terraform apply --auto-approve -var="env=dev"
+  491  docker ps
+  492  docker ps
+  493  docker ps
+  494  terraform workspace select prod
+  495  terraform apply --auto-approve -var="env=prod"
+  496  docker ps
+  497  docker ps
+  498  docker ps
+  499  docker ps
+  500  docker ps
+  501  docker ps
+  502  docker ps
+  503  docker ps
+  504  docker ps
+  505  docker ps
+  506  docker ps
+  507  terraform destroy 
+  508  terraform workspace select dev
+  509  terraform destroy 
+  510  terraform state list 
+  511  cd terraform-docker/
+  512  terraform state list 
+  513  terraform console 
+  514  terraform workspace list 
+  515  terraform workspace select prod
+  516  terraform workspace select default
+  517  terraform console 
+  518  terraform workspace select prod
+  519  terraform console 
+  520  terraform workspace show 
+  521  terraform apply --auto-approve -var "env=prod"
+  522  terraform workspace select dev
+  523  terraform apply --auto-approve -var "env=dev"
+  524  docker ps
+  525  terraform console 
+  526  terraform workspace show 
+  527  terraform workspace select prod
+  528  terraform plan | grep external
+  529  terraform plan | grep external
+  530  terraform plan | grep external
+  531  terraform plan | grep external
+  532  terraform plan
+  533  terraform plan | grep external
+  534  terraform workspace select dev
+  535  terraform plan | grep external
+  536  terraform plan
+  537  terraform destroy 
+  538  terraform plan | grep external
+  539  terraform workspace select prod 
+  540  terraform destroy 
+  541  terraform plan | grep external
+  542  terraform plan
+  543  terraform plan | grep external
+  544  terraform workspace show 
+  545  terraform apply 
+  546  terraform workspace select dev
+  547  terraform state list
+  548  terraform apply 
+  549  docker ps
+  550  terraform workspace select default 
+  551  terraform state list 
+  552  terraform workspace select dev
+  553  terraform destroy 
+  554  terraform workspace select prod 
+  555  terraform destroy 
+  556  terraform workspace select dev 
+  557  terraform console 
+  558  terraform apply 
+  559  docker ps
+  560  cd terraform-docker/
+  561  ls
+  562  git remote -v
+  563  cd ..
+  564  ls
+  565  git init
+  566  ls
+  567  ls -la
+  568  git branch -m master main
+  569  git add --help
+  570  git add -A
+  571  git status
+  572  git commit -m "Added Terraform-docker project"
+  573  git status
+  574  git branch --help
+  575  git branch -m master main
+  576  git remote -v
+  577  git remote add origin git@github.com:noweder/Terraform.git
+  578  git remote show 
+  579  git remote 0v
+  580  git remote -v
+  581  git pull
+  582  git push https://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@github.com/noweder/terraform.git
+  583  git pull
+  584  ssh -vT git@github.com
+  585  ls -al ~/.ssh
+  586  ssh-keygen -t ed25519 -C "hmnoweder@gmail.com"
+  587  ls -al ~/.ssh
+  588  eval "$(ssh-agent -s)"
+  589  ssh-add ~/.ssh/id_ed25519
+  590   cat ~/.ssh/id_ed25519.pub
+  591   cat ~/.ssh/id_ed25519
+  592  git pull
+  593  ssh -vT git@github.com
+  594  git pull
+  595  git pull origin main
+  596  git push https://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@github.com/noweder/terraform.git
+  597  git fetch
+  598  ls
+  599  git pull
+  600  git push -u origin main
+  601  git fetch origin
+  602  ls
+  603  git merge origin main
+  604  git pull origin main
+  605  git pull origin main --allow-unrelated-histories
+  606  ls
+  607  ls
+  608  cat README.md 
+  609  rm README.md 
+  610  cat README.md 
+  611  git pull origin main 
+  612  git pull origin main --allow-unrelated-histories
+  613  git pull origin main --allow-unrelated-histories
+  614  vim README.md
+  615  cat README.md 
+  616  git pull origin main --allow-unrelated-histories
+  617  git pull origin main 
+  618  git status
+  619  git add .
+  620  git status
+  621  git commit -m "fixed conflict"
+  622  git push -u origin main
+  623  git pull
+  624  git status
+  625  history
+  626  ls
+  627  ls -la
+  628  cd terraform-docker/
+  629  cd ..
+  630  ls
+  631  git status
+  632  git add .
+  633  git commit -m "updated gitignore"
+  634  git push -u origin main
+  635  git status
+  636  git push -u origin main
+  637  git pull
+  638  git pull origin main --allow-unrelated-histories
+  639  git status
+  640  git merge --abort
+  641  git status
+  642  ls
+  643  git status
+  644  git rm .c9/metadata/environment/terraform-docker/main.tf
+  645  rm .git 
+  646  ls -la
+  647  rmdir .git/
+  648  rmdir -R .git/
+  649  rmdir -r .git/
+  650  rm -r .git
+  651  cd .git/
+  652  ls
+  653  cd ..
+  654  ls
+  655  ls -la
+  656  rm -r .git/
+  657  rm -rf .git/
+  658  ls -la
+  659  rm .gitignore 
+  660  ls -la
+  661  cd terraform-docker/
+  662  ls
+  663  terraform workspace s
+  664  terraform workspace show 
+  665  terraform workspace select prod 
+  666  terraform apply 
+  667  terraform init 
+  668  terraform apply 
+  669  terraform destroy 
+  670  ls -la
+  671  ls
+  672  cd ..
+  673  git clone https://github.com/morethancertified/mtc-terraform.git
+  674  ks
+  675  ls
+  676  cd mtc-terraform/
+  677  ls
+  678  terraform state list 
+  679  ls
+  680  cd 02-terraform-basics-docker/11-Multiple-Resources-count/
+  681  ls
+  682  terraform init 
+  683  terraform apply 
+  684  terraform destroy 
+  685  cd ..
+  686  git remote -v
+  687  cd terraform-docker/
+  688  git status
+  689  cd ..
+  690  git status
+  691  git terraform-docker/
+  692  ls
+  693  mkdir terraform-noweder
+  694  cd terraform-
+  695  cd terraform-noweder/
+  696  git clone https://github.com/noweder/Terraform.git
+  697  ls
+  698  cd Terraform/
+  699  ls
+  700  git status
+  701  ls
+  702  cat README.md 
+  703  vim README.md 
+  704  git status
+  705  git add .
+  706  git commit -m "updated README"
+  707  git config --global user.name "Hamza Noweder"
+  708  git config --global user.email hmnoweder@gmail.com
+  709      git commit --amend --reset-author
+  710  git commit --amend --reset-author
+  711  git commit --amend --reset-author
+  712  git status
+  713  git push
+  714  git push
+  715  ls
+  716  cd terraform-docker/
+  717  ls
+  718  ls
+  719  terraform apply 
+  720  terraform init
+  721  terraform workspace show 
+  722  terraform apply 
+  723  terraform workspace new dev
+  724  terraform workspace show 
+  725  terraform apply 
+  726  terraform destroy 
+  727  ls
+  728  cd terraform-noweder/
+  729  ls
+  730  cd Terraform/
+  731  git status
+  732  vim README.md 
+  733  git statys
+  734  git status 
+  735  git commit -m "updated README"
+  736  git add .
+  737  git commit -m "updated README"
+  738  git push
+  739  vim README.md 
+  740  git add .
+  741  git commit -m "updated README"
+  742  git push
+  743  git push -u origin main
+  744  git config credential.helper store
+  745  git push -u origin main
+  746  vim README.md 
+  747  git add .
+  748  git commit -m "updated README"
+  749  git push
+  750  cat ~/.git-credentials 
+  751  cat ~/.ssh/id_ed25519.pub 
+  752  ssh -T git@github.com
+  753  git remote -v
+  754  git remote set-url origin git@github.com:noweder/Terraform.git
+  755  git remote -v
+  756  vim README.md 
+  757  git add .
+  758  git commit -m "updated readme"
+  759  git push
+  760  ssh -T git@github.com
+  761  git push
+  762  cd image/
+  763  touch main.tf outputs.tf variables.tf providers.tf
+  764  ls
+  765  cd ..
+  766  terraform init
+  767  terraform plan 
+  768  terraform state list 
+  769  terraform destroy 
+  770  docker images
+  771  docker image rm nodered/node-red:latest nodered/node-red:latest 
+  772  docker ps
+  773  docker ps -a
+  774  docker rm -f $(docker ps -a -q)
+  775  docker rmi -f $(docker images -q)
+  776  docker images
+  777  docker ps -a
+  778  terraform destroy 
+  779  terraform init 
+  780  terraform plan 
+  781  terraform workspace show 
+  782  terraform apply 
+  783  terraform destroy 
+  784  git status
+  785  git add .
+  786  git commit -m "created image module"
+  787  git push
+  788  git status
+  789  terraform plan 
+  790  cd terraform-noweder/Terraform/
+  791  terraform plan 
+  792  ls
+  793  cd terraform-docker/
+  794  ls
+  795  terraform plan 
+  796  terraform apply 
+  797  git status
+  798  git add .
+  799  git commit -m "added variable for image module"
+  800  git push
+  801  docker ps
+  802  git status
+  803  git add -A
+  804  git commit -m 
+  805  git commit -m "updated gitignore"
+  806  git push
+  807  git add -A
+  808  git status
+  809  git commit -m "updated gitignore"
+  810  git push
+  811  git add -A
+  812  git commit -m "updated gitignore"
+  813  git push
+  814  git status
+  815  git add -A
+  816  git commit -m "updated gitignore"
+  817  git push
+  818  terraform destroy 
+  819  git rm --cached terraform.tfstate 
+  820  git commit -m 
+  821  git commit -m "start ignoring tfstate file"
+  822  git status
+  823  git add .
+  824  git status
+  825  git push
+  826  cd terraform-noweder/Terraform/terraform-docker/
+  827  terraform state list 
+  828  git status
+  829  git diff .gitignore
+  830  git status
+  831  terraform plan 
+  832  terraform workspace show 
+  833  terraform apply 
+  834  terraform destroy 
+  835  terraform validate 
+  836  terraform plan 
+  837  terraform graph 
+  838  sudo apt install graphviz
+  839  terraform graph | dot -Tpdf > graph-plan.pdf
+  840  cd terraform-noweder/Terraform/terraform-docker/
+  841  l
+  842  ls
+  843  terraform state list 
+  844  terraform validate 
+  845  terraform plan 
+  846  terraform apply 
+  847  terraform graph | dot -Tpdf > graph-applied.pdf
+  848  terraform graph --help
+  849  terraform graph -type=plan-destroy | dot -Tpdf > graph-destroyed.pdf
+  850  terraform graph | dot -Tpdf > graph-noip.pdf
+  851  terraform state 
+  852  terraform state list 
+  853  terraform destroy 
+  854  terraform apply 
+  855  docker ps
+  856  terraform state list 
+  857  terraform apply 
+  858  docker ps -a
+  859  docker logs nodered-dev-1ccr 
+  860  terraform graph | dot -Tpdf > graph-implicit.pdf
+  861  terraform destroy 
+  862  terraform apply 
+  863  docker ps -a
+  864  git status
+  865  git add .
+  866  git status
+  867  git commit -m "removed one port from terraform.tfvars and added implicit dependency between dockervol and nodered_container"
+  868  git push
+  869  terraform graph | dot -Tpdf > graph-explicit.pdf
+  870  terraform destroy --auto-approve && terraform apply --auto-approve
+  871  docker ps 
+  872  docker ps 
+  873  docker ps 
+  874  terraform destroy --auto-approve
+  875  git status
+  876  git add .
+  877  git commit -m "added explicit dependency in nodered_container"
+  878  git push
+  879  cd container/
+  880  touch main.tf outputs.tf providers.tf variables.tf
+  881  terraform state list 
+  882  terraform status
+  883  terraform init
+  884  terraform plan 
+  885  cd ..
+  886  terraform init 
+  887  terraform plan 
+  888  terraform plan 
+  889  terraform plan 
+  890  terraform plan 
+  891  terraform apply 
+  892  docker ps
+  893  terraform destroy 
+  894  git status
+  895  git diff main.tf
+  896  git status
+  897  git add .
+  898  git commit -m "initialized container module"
+  899  git status
+  900  git push
+  901  git status
+  902  terraform state list 
+  903  terraform apply 
+  904  docker ps
+  905  terraform console 
+  906  terraform validate 
+  907  terraform plan 
+  908  terraform apply 
+  909  terraform apply 
+  910  terraform apply 
+  911  terraform apply 
+  912  terraform destroy 
+  913  git status
+  914  git add .
+  915  git commit -m "updated root and module outputs"
+  916  git push
+  917  terraform destroy 
+  918  cd terraform-noweder/Terraform/terraform-docker/
+  919  terraform destroy 
+  920  terraform apply 
+  921  docker volume ls
+  922  sudo su
+  923  terraform destroy 
+  924  docker volume ls
+  925  terraform apply 
+  926  terraform graph -draw-cycles | doct -Tpdf > graph-cycle.pdf
+  927  terraform graph -draw-cycles | dot -Tpdf > graph-cycle.pdf
+  928  terraform apply 
+  929  docker ps
+  930  docker volume ls
+  931  terraform destroy 
+  932  docker volume ls
+  933  docker volume rm -f $(docker volume ls -q)
+  934  docker volumes ls
+  935  docker volume ls
+  936  docker images
+  937  docker ps
+  938  git status
+  939  git add .
+  940  git commit -m "added docker_volume resource"
+  941  git push
+  942  terraform destroy 
+  943  docker ps
+  944  terraform state list 
+  945  cd terraform-noweder/Terraform/terraform-docker/
+  946  terraform destroy 
+  947  terraform state list 
+  948  terraform apply 
+  949  docker volume ls
+  950  terraform destroy --auto-approve
+  951  terraform state list 
+  952  terraform destroy -target=module.container[0].docker_container.nodered_container
+  953  terraform state list 
+  954  terraform destroy --auto-approve
+  955  git status
+  956  git add .
+  957  git commit -m "added prevent_destroy argument to container module"
+  958  git push
+  959  terraform fmt 
+  960  terraform fmt 
+  961  terraform fmt 
+  962  terraform fmt 
+  963  terraform console 
+  964  terraform init
+  965  terraform console 
+  966  terraform console 
+  967  terraform apply 
+  968  docker image ls
+  969  git status
+  970  git add .
+  971  git status
+  972  git commit -m "added influxdb_image"
+  973  git push
+  974  terraform state list 
+  975  terraform destroy --auto-approve
+  976  terraform state list 
+  977  docker volume ls
+  978  docker ps -a
+  979  cd terraform-noweder/Terraform/terraform-docker/
+  980  git status
+  981  terraform console 
+  982  terraform console 
+  983  terraform validate 
+  984  terraform validate 
+  985  terraform console 
+  986  terraform apply 
+  987  docker image ls
+  988  terraform state list
+  989  git status
+  990  git add .git diff image/main.tf
+  991  git diff image/outputs.tf
+  992  git diff image/variables.tf
+  993  git diff image/outputs.tf
+  994  git diff image/main.tf
+  995  git diff main.tf
+  996  git add .
+  997  git commit -m "added for_each in module image for more clean code"
+  998  git push
+  999  terraform state list 
+ 1000  terraform fmt
+ 1001  terraform fmt 
+ 1002  terraform validate 
+ 1003  terraform apply 
+ 1004  terraform state list 
+ 1005  docker ps
+ 1006  git status
+ 1007  git add .
+ 1008  git commit -m "Deploying Containers with for_each"
+ 1009  git push
+ 1010  terraform destroy 
+ 1011  cd terraform-noweder/Terraform/terraform-docker/
+ 1012  ls
+ 1013  terraform fmt
+ 1014  terraform validate 
+ 1015  terraform validate 
+ 1016  terraform validate 
+ 1017  terraform apply 
+ 1018  terraform state list 
+ 1019  terraform apply 
+ 1020  terraform destroy 
+ 1021  docker ps
+ 1022  docker image ls
+ 1023  terraform apply 
+ 1024  terraform state list 
+ 1025  docker ps
+ 1026  docker volume ls
+ 1027  terraform workspace show
+ 1028  docker ps
+ 1029  terraform apply 
+ 1030  terraform state list 
+ 1031  docker ps
+ 1032  git status
+ 1033  git add .
+ 1034  git commit -m "moved count functionality to container module"
+ 1035  git push
+ 1036  cd terraform-noweder/Terraform/terraform-docker/
+ 1037  terraform destroy 
+ 1038  docker ps -a
+ 1039  docker volume ls
+ 1040  terraform console 
+ 1041  cd terraform-noweder/
+ 1042  cd Terraform/terraform-docker/
+ 1043  terraform destroy 
+ 1044  terraform console 
+ 1045  terraform console 
+ 1046  cd container/
+ 1047  terraform console 
+ 1048  cd ..
+ 1049  terraform validate 
+ 1050  terraform validate 
+ 1051  terraform validate 
+ 1052  terraform apply 
+ 1053  terraform validate 
+ 1054  terraform apply 
+ 1055  docker ps
+ 1056  git status
+ 1057  git add .
+ 1058  git commit -m "updated outputs files"
+ 1059  git push
+ 1060  cd terraform-noweder/Terraform/terraform-docker/
+ 1061  terraform validate 
+ 1062  terraform validate 
+ 1063  terraform validate 
+ 1064  terraform plan
+ 1065  terraform apply 
+ 1066  docker ps
+ 1067  terraform destroy 
+ 1068  terraform workspace show 
+ 1069  terraform apply --auto-approve
+ 1070  git status
+ 1071  git add .
+ 1072  git commit -m "added Grafana deployment"
+ 1073  git push
+ 1074  terraform validate 
+ 1075  terraform state list 
+ 1076  terraform destroy 
+ 1077  git add .
+ 1078  git commit -m "created locals.tf and moved the config from main.tf to it"
+ 1079  git push
+ 1080  cd terraform-noweder/Terraform/terraform-docker/
+ 1081  terraform state list 
+ 1082  terraform console 
+ 1083  terraform apply --auto-approve
+ 1084  docker volume ls
+ 1085  terraform apply --auto-approve
+ 1086  terraform apply --auto-approve
+ 1087  docker volume ls
+ 1088  terraform destroy 
+ 1089  cd ../backup/
+ 1090  ls
+ 1091  tar -tzvf grafana-kw5e-volume.tar.gz 
+ 1092  tar -tzvf nodered-8npb-volume.tar.gz 
+ 1093  git status
+ 1094  git add .
+ 1095  git commit -m "added local provisioner to backup volumes"
+ 1096  ls
+ 1097  cd ..
+ 1098  ls
+ 1099  cd terraform-docker/
+ 1100  ls
+ 1101  git add .
+ 1102  git commit -m "added local provisioner to backup volumes"
+ 1103  git push
+ 1104  terraform state list 
+ 1105  terraform apply 
+ 1106  terraform apply 
+ 1107  terraform apply 
+ 1108  terraform validate 
+ 1109  terraform fmt 
+ 1110  terraform apply 
+ 1111  terraform apply 
+ 1112  cd terraform-noweder/Terraform/terraform-docker/
+ 1113  terraform apply 
+ 1114  terraform console 
+ 1115  terraform destroy 
+ 1116  terraform fmt -recursive
+ 1117  terraform fmt -recursive
+ 1118  cd terraform-noweder/Terraform/terraform-docker/
+ 1119  terraform fmt -recursive
+ 1120  terraform validate 
+ 1121  terraform validate 
+ 1122  terraform plan 
+ 1123  terraform apply 
+ 1124  docker ps
+ 1125  docker inspect $(docker ps -a -q) | grep volume
+ 1126  terraform destroy 
+ 1127  git status
+ 1128  git add .
+ 1129  git commit -m "added the ability to use multiple volumes"
+ 1130  git push
+ 1131  terraform apply 
+ 1132  terraform apply 
+ 1133  docker ps
+ 1134  docker container ls
+ 1135  docker ps -a
+ 1136  docker volume ls
+ 1137  terraform validate 
+ 1138  terraform init 
+ 1139  terraform init 
+ 1140  terraform validate 
+ 1141  terraform init 
+ 1142  terraform validate 
+ 1143  terraform init 
+ 1144  terraform validate 
+ 1145  terraform plan 
+ 1146  terraform apply 
+ 1147  sudo tree /var/lib/docker/volumes
+ 1148  apt install tree -y
+ 1149  sudo apt install tree -y
+ 1150  sudo tree /var/lib/docker/volumes
+ 1151  terraform fmt -recursive
+ 1152  terraform fmt -recursive
+ 1153  terraform apply 
+ 1154  sudo tree /var/lib/docker/volumes
+ 1155  git add .
+ 1156  git commit -m "added nested volume module"
+ 1157  git push
+ 1158  cd terraform-noweder/Terraform/Weather\ Dashboard\ Project/
+ 1159  terraform state list 
+ 1160  terraform init 
+ 1161  terraform plan 
+ 1162  terraform workspace show 
+ 1163  terraform workspace new dev
+ 1164  terraform workspace new prod
+ 1165  terraform workspace show 
+ 1166  terraform workspace select prod 
+ 1167  terraform plan
+ 1168  terraform apply 
+ 1169  cd terraform-noweder/
+ 1170  cd Terraform/
+ 1171  ls
+ 1172  git status
+ 1173  git diff terraform-docker/terraform.tfvars
+ 1174  git add .
+ 1175  git commit -m "updated config"
+ 1176  git push
+ 1177  cd terraform-aws/
+ 1178  terraform login
+ 1179  terraform init
+ 1180  git status
+ 1181  cd ..
+ 1182  git status
+ 1183  cd terraform-aws/
+ 1184  git status
+ 1185  git add -A
+ 1186  git status
+ 1187  git commit -m "setting up terraform cloud"
+ 1188  git push
+ 1189  terraform init
+ 1190  git status
+ 1191  git add -A
+ 1192  git status
+ 1193  git commit -m "setting up aws provider"
+ 1194  git push
+ 1195  terraform fmt 
+ 1196  terraform fmt -recursive
+ 1197  terraform fmt -recursive
+ 1198  terraform fmt
+ 1199  terraform init 
+ 1200  terraform plan 
+ 1201  terraform apply 
+ 1202  git status
+ 1203  git add --help
+ 1204  git add -A
+ 1205  git status
+ 1206  git commit -m "updated files for creating vpc"
+ 1207  git push
+ 1208  terraform state list 
+ 1209  terraform workspace show 
+ 1210  terraform apply 
+ 1211  terraform apply 
+ 1212  git status
+ 1213  git diff main.tf
+ 1214  git add .
+ 1215  git commit -m "changed vpc cidr"
+ 1216  git push
+ 1217  terraform fmt
+ 1218  terraform fmt -recursive
+ 1219  terraform validate 
+ 1220  terraform plan 
+ 1221  terraform apply 
+ 1222  terraform plan 
+ 1223  terraform apply 
+ 1224  git status
+ 1225  terraform fmt -recursive
+ 1226  git add -A
+ 1227  git status
+ 1228  git commit -m "added two public subnets - hardcoded"
+ 1229  git push
+ 1230  terraform destroy 
+ 1231  git log
+ 1232  terraform fmt -recursive
+ 1233  terraform validate 
+ 1234  terraform plan 
+ 1235  terraform plan 
+ 1236  git status
+ 1237  git diff networking/main.tf
+ 1238  git status
+ 1239  terraform fmt -recursive
+ 1240  terrafor plan
+ 1241  terraform plan
+ 1242  terraform apply
+ 1243  git add -A
+ 1244  git commit -m "added 3 private subnets - hardcoded"
+ 1245  git push
+ 1246  terraform console 
+ 1247  ipcalc 10.1.2.0/24
+ 1248  sudo apt install ipcalc
+ 1249  ipcalc 10.1.2.0/24
+ 1250  terraform console 
+ 1251  ipcalc 172.16.0.0/12
+ 1252  terraform console 
+ 1253  terraform fmt -recursive
+ 1254  terraform plan 
+ 1255  terraform destroy 
+ 1256  terraform apply --auto-approve
+ 1257  git status
+ 1258  git diff networking/main.tf
+ 1259  git status
+ 1260  git diff main.tf
+ 1261  git add -A
+ 1262  git commit -m "utilized cidersubnet function to create cidrs"
+ 1263  git push
+ 1264  terraform destroy 
+ 1265  terraform fmt -recursive
+ 1266  terraform validate 
+ 1267  terraform plan 
+ 1268  terraform apply 
+ 1269  terraform apply 
+ 1270  terraform apply 
+ 1271  terraform apply 
+ 1272  terraform apply 
+ 1273  git status
+ 1274  git add -A
+ 1275  git commit -m "added random_shuffle resource for list of azs"
+ 1276  git push
+ 1277  terraform state list 
+ 1278  terraform fmt -recursive
+ 1279  terraform validate 
+ 1280  terraform plan 
+ 1281  terraform apply 
+ 1282  terraform state list 
+ 1283  git status
+ 1284  git add -A
+ 1285  git commit -m "added git diff networking/main.tf"
+ 1286  git diff networking/main.tf
+ 1287  git status
+ 1288  git commit --amend
+ 1289  git commit --amend
+ 1290  git status
+ 1291  git push
+ 1292  git status
+ 1293  terraform apply 
+ 1294  terraform apply 
+ 1295  terraform plan 
+ 1296  terraform fmt -recursive
+ 1297  terraform plan
+ 1298  terraform apply 
+ 1299  git add .
+ 1300  git commit -m "added create_before_destroy lifecycle to vpc resource"
+ 1301  git push
+ 1302  terraform apply 
+ 1303  terraform fmt
+ 1304  terraform fmt -recursive
+ 1305  terraform fmt -recursive
+ 1306  ls
+ 1307  terraform fmt -recursive
+ 1308  terraform plan 
+ 1309  terraform apply 
+ 1310  git add .
+ 1311  git commit -m "added VPC Security Groups "Hardcoded""
+ 1312  git push
+ 1313  git status
+ 1314  git add -A
+ 1315  git status
+ 1316  git commit -m "updated gitignore"
+ 1317  git push
+ 1318  git status
+ 1319  terraform fmt -recursive
+ 1320  terraform fmt -recursive
+ 1321  terraform plan 
+ 1322  terraform plan 
+ 1323  terraform apply 
+ 1324  terraform destroy --auto-approve
+ 1325  terraform apply 
+ 1326  git status
+ 1327  git add -A
+ 1328  git status
+ 1329  git commit -m "  VPC Security Groups Dynamic"
+ 1330  git commit --amend
+ 1331  git commit --amend
+ 1332  git push
+ 1333  terraform fmt -recursive
+ 1334  terraform fmt
+ 1335  terraform fmt -recursive
+ 1336  terraform plan 
+ 1337  terraform plan 
+ 1338  terraform workspace show 
+ 1339  terraform apply --auto-approve
+ 1340  terraform state list 
+ 1341  terraform plan 
+ 1342  terraform fmt -recursive
+ 1343  terraform console 
+ 1344  terraform plan 
+ 1345  terraform fmt -recursive
+ 1346  terraform fmt -recursive
+ 1347  terraform plan 
+ 1348  terraform apply 
+ 1349  git status
+ 1350  git add .
+ 1351  git commit -m "added db_subnet_group resource with condition"
+ 1352  git push
+ 1353  terraform state list 
+ 1354  terraform console 
+ 1355  terraform init 
+ 1356  terraform console 
+ 1357  cd networking/
+ 1358  terraform console 
+ 1359  cd ..
+ 1360  terraform init 
+ 1361  terraform plan 
+ 1362  git status
+ 1363  git add .
+ 1364  git commit -m "added database module"
+ 1365  git push
+ 1366  terraform fmt -recursive
+ 1367  terraform validate 
+ 1368  terraform plan 
+ 1369  terraform apply --auto-approve
+ 1370  git status
+ 1371  git add .
+ 1372  git status
+ 1373  git diff networking/outputs.tf
+ 1374  git commit -m "completed database config"
+ 1375  git push
+ 1376  terraform apply --auto-approve
+ 1377  sudo apt-get install jq
+ 1378  terraform providers schema -json | jq '.' > schema.json
+ 1379  terraform fmt -recursive
+ 1380  terraform validate 
+ 1381  terraform init 
+ 1382  terraform validate 
+ 1383  terraform validate 
+ 1384  terraform plan 
+ 1385  terraform apply --auto-approve
+ 1386  git status
+ 1387  git add -A
+ 1388  git commit -m "added ALB module"
+ 1389  git push
+ 1390  terraform destroy --auto-approve
+ 1391  terraform apply --auto-approve
+ 1392  terraform console 
+ 1393  terraform fmt -recursive
+ 1394  terraform fmt -recursive
+ 1395  terraform fmt -recursive
+ 1396  terraform fmt -recursive
+ 1397  terraform validate 
+ 1398  terraform validate 
+ 1399  terraform plan 
+ 1400  terraform apply --auto-approve
+ 1401  git status
+ 1402  git diff main.tf
+ 1403  git add .
+ 1404  git commit -m "added target group resouce"
+ 1405  git push
+ 1406  terraform fmt -recursive
+ 1407  terraform validate 
+ 1408  terraform plan 
+ 1409  terraform apply 
+ 1410  terraform version
+ 1411  sudo apt-get --only-upgrade install terraform
+ 1412  terraform version 
+ 1413  terraform state list 
+ 1414  git status
+ 1415  git add .
+ 1416  git commit -m "added lb listener part"
+ 1417  git push
+ 1418  git status
+ 1419  terraform plan 
+ 1420  terraform plan 
+ 1421  terraform apply --auto-approve
+ 1422  terraform plan 
+ 1423  terraform version 
+ 1424  terraform init 
+ 1425  terraform plan 
+ 1426  terraform apply --auto-approve
+ 1427  terraform plan 
+ 1428  terraform plan 
+ 1429  terraform plan 
+ 1430  terraform apply --auto-approve
+ 1431  git status
+ 1432  git add .
+ 1433  git commit -m "added required lifecycle policies to lb target group"
+ 1434  git push
+ 1435  terraform om
+ 1436  terraform init 
+ 1437  terraform fmt -recursive
+ 1438  terraform validate 
+ 1439  git status
+ 1440  git add .
+ 1441  git commit -m "initialized compute module"
+ 1442  git push
+ 1443  terraform fmt -recursive
+ 1444  terraform init 
+ 1445  terraform init 
+ 1446  terraform validate 
+ 1447  terraform plan 
+ 1448  terraform plan 
+ 1449  terraform apply --auto-approve
+ 1450  terraform destroy --auto-approve
+ 1451  terraform fmt -recursive
+ 1452  git status
+ 1453  git add .
+ 1454  git commit -m "added compute module config"
+ 1455  git push
+ 1456  terraform apply --auto-approve
+ 1457  ssh-keygen -t rsa
+ 1458  cat ~/.ssh/keynoweder.pub 
+ 1459  realpath keynoweder
+ 1460  cat ~/.ssh/keynoweder.pub 
+ 1461  realpath keynoweder.pub 
+ 1462  ls ~
+ 1463  ls ~/
+ 1464  ls ~/ubuntu
+ 1465  ls ~/.ssh/
+ 1466  cat ~/.ssh/keynoweder.pub 
+ 1467  ip a
+ 1468  pwd
+ 1469  terraform fmt -recursive
+ 1470  terraform fmt -recursive
+ 1471  terraform validate 
+ 1472  terraform plan 
+ 1473  terraform apply --auto-approve
+ 1474  git status
+ 1475  git diff compute/main.tf
+ 1476  git add .
+ 1477  git commit -m "added aws_key_pair resource and updated the files"
+ 1478  git push
+ 1479  terraform plan 
+ 1480  terraform plan 
+ 1481  terraform plan 
+ 1482  git add .
+ 1483  git commit -m "added keepers attribute to random_id to force instance replacement with new name"
+ 1484  git push
+ 1485  git status
+ 1486  git add .
+ 1487  git commit -m "return key_name back as before"
+ 1488  git push
+ 1489  echo ${nodename}
+ 1490  nodename
+ 1491  terraform destroy --auto-approve
+ 1492  curl http://169.254.169.254/latest/meta-data/public-ipv4
+ 1493  terraform console 
+ 1494  terraform fmt -recursive
+ 1495  terraform fmt -recursive
+ 1496  terraform fmt -recursive
+ 1497  terraform validate 
+ 1498  terraform validate 
+ 1499  terraform validate 
+ 1500  terraform validate 
+ 1501  terraform fmt -recursive
+ 1502  terraform validate 
+ 1503  terraform fmt -recursive
+ 1504  terraform validate 
+ 1505  terraform plan 
+ 1506  terraform apply --auto-approve
+ 1507  ssh -i ~/.ssh/keynoweder ubuntu@35.86.224.216
+ 1508  terraform plan
+ 1509  terraform apply --auto-approve
+ 1510  terraform plan
+ 1511  terraform apply --auto-approve
+ 1512  git status
+ 1513  git add .
+ 1514  git status
+ 1515  git commit -m "added k3s required configuration"
+ 1516  git push
+ 1517  git add .
+ 1518  git commit -m "updated README"
+ 1519  git push
+ 1520  terraform destroy --auto
+ 1521  ssh -i ~/.ssh/keynoweder ubuntu@35.86.224.216
+ 1522  git status
+ 1523  git add .
+ 1524  git commit -m "added deployment.yml file"
+ 1525  git push
+ 1526  terraform destroy --auto-approve
+ 1527  terraform fmt -recursive
+ 1528  terraform validate 
+ 1529  terraform plan 
+ 1530  git status
+ 1531  terraform apply --auto-approve
+ 1532  git add .
+ 1533  git commit -m "added lb target group attachements to instances"
+ 1534  git push
+ 1535  terraform plan 
+ 1536  terraform apply --auto-approve
+ 1537  git add .
+ 1538  git commit -m "changed lb listener port to 80"
+ 1539  git push
+ 1540  terraform state show module.loadbalancing.aws_lb.noweder-lb
+ 1541  terraform state show module.loadbalancing.aws_lb.noweder-lb | grep dns
+ 1542  terraform fmt -recursive
+ 1543  terraform plan 
+ 1544  terraform refresh 
+ 1545  git status
+ 1546  git add .
+ 1547  git commit -m "added output to show load balancer dns name"
+ 1548  git push
+ 1549  ssh -i ~/.ssh/keynoweder ubuntu@54.188.148.232
+ 1550  terraform refresh 
+ 1551  terraform output 
+ 1552  terraform refresh 
+ 1553  terraform output 
+ 1554  terraform output -json | jq '."instances."value"'
+ 1555  terraform output -json | jq '."instances"."value"'
+ 1556  terraform refresh 
+ 1557  terraform output 
+ 1558  terraform output -json
+ 1559  terraform output -json | jq
+ 1560  git add .
+ 1561  git status
+ 1562  git commit -m "added output for instance names and IP addresses"
+ 1563  git push
+ 1564  terraform fmt -recursive
+ 1565  git add .
+ 1566  git commit -m "added a variable for tg_port"
+ 1567  git push
+ 1568  terraform refresh 
+ 1569  terraform refresh 
+ 1570  terraform refresh 
+ 1571  terraform refresh 
+ 1572  terraform refresh 
+ 1573  terraform refresh 
+ 1574  terraform refresh 
+ 1575  terraform refresh 
+ 1576  terraform refresh 
+ 1577  terraform refresh 
+ 1578  terraform refresh 
+ 1579  terraform output 
+ 1580  git add .
+ 1581  git commit -m "changed the instances output format"
+ 1582  git push
+ 1583  curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+ 1584  ls
+ 1585  curl -LO "https://dl.k8s.io/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl.sha256"
+ 1586  ls
+ 1587  ls
+ 1588  ls -la
+ 1589  echo "$(cat kubectl.sha256)  kubectl" | sha256sum --check
+ 1590  sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
+ 1591  kubectl 
+ 1592  terraform fmt -recursive
+ 1593  terraform validate 
+ 1594  terraform plan 
+ 1595  terraform apply 
+ 1596  ls -la
+ 1597  terraform apply 
+ 1598  terraform destroy --auto-approve
+ 1599  terraform apply --auto-approve
+ 1600  export KUBECONFIG=../k3s-noweder_node-55068.yaml
+ 1601  kubectl get nodes
+ 1602  terraform destroy --auto-approve
+ 1603  git status
+ 1604  git status
+ 1605  git add -A
+ 1606  git status
+ 1607  git status
+ 1608  git commit -m "added local-exec provisioner to pull the kubeconfig file"
+ 1609  git push
+ 1610  terraform apply --auto-approve
+ 1611  git status
+ 1612  export KUBECONFIG = ../k3s-noweder_node-39157.yaml
+ 1613  export KUBECONFIG =../k3s-noweder_node-39157.yaml
+ 1614  history
+ 1615  export KUBECONFIG=../k3s-noweder_node-39157.yaml 
+ 1616  kubectl get node
+ 1617  kubectl get nodes
+ 1618  kubectl get pods
+ 1619  terraform state list 
+ 1620  ssh -i ~/.ssh/keynoweder ubuntu@34.222.229.235
+ 1621  terraform apply -replace="module.compute.aws_instance.noweder_node[0]"
+ 1622  kubectl get nodes
+ 1623  export KUBECONFIG=../k3s-noweder_node-39157.yaml 
+ 1624  kubectl get nodes
+ 1625  terraform refresh 
+ 1626  terraform refresh 
+ 1627  terraform refresh 
+ 1628  terraform refresh 
+ 1629  terraform refresh 
+ 1630  terraform output 
+ 1631  terraform output -json
+ 1632  terraform output 
+ 1633  export KUBECONFIG=../k3s-noweder_node-39157.yaml
+ 1634  kubectl get nodes
+ 1635  kubectl get pods
+ 1636  kubectl create -f deployment.yml 
+ 1637  kubectl get pods
+ 1638  kubectl get nodes
+ 1639  terraform output 
+ 1640  git status
+ 1641  git add -A
+ 1642  git commit -m "cleanup and creating a destroy provisioner"
+ 1643  git status
+ 1644  git push
+ 1645  terraform destroy --auto-approve
+ 1646  terraform fmt -version
+ 1647  terraform fmt -recusrive
+ 1648  terraform fmt -recursive
+ 1649  git status
+ 1650  git diff outputs.tf
+ 1651  git add -A
+ 1652  git commit -m "fixed some formats"
+ 1653  git push
+ 1654  terraform apply --auto-approve
+ 1655  cd terraform-noweder/Terraform/terraform-aws/
+ 1656  terraform console 
+ 1657  cd ..
+ 1658  terraform destroy --auto-approve
+ 1659  terraform state list 
+ 1660  terraform apply --auto-approve
+ 1661  terraform apply --auto-approve
+ 1662  terraform fmt -recursive
+ 1663  terraform fmt -recursive
+ 1664  terraform apply --auto-approve
+ 1665  export KUBECONFIG=../k3s-noweder_node-46226.yaml
+ 1666  kubectl get pods
+ 1667  kubectl get nodes
+ 1668  git status
+ 1669  git status
+ 1670  git status
+ 1671  git add -A
+ 1672  git commit -m "fixed bug and created new project dir"
+ 1673  git push
+ 1674  git status
+ 1675  git add -A
+ 1676  git commit -m "modified gitignore"
+ 1677  git push 
+ 1678  git rm --cached ~/environment/terraform-noweder/Terraform/.terraform.tfstate.lock.info 
+ 1679  git status
+ 1680  git add -A
+ 1681  git commit -m "modified gitignore"
+ 1682  git push 
+ 1683  terraform output 
+ 1684  kubectl create -f deployment.yaml 
+ 1685  kubectl get pods
+ 1686  terraform output 
+ 1687  terraform login
+ 1688  cat ../k3s-noweder_node-46226.yaml
+ 1689  terraform init 
+ 1690  terraform init 
+ 1691  terraform destroy --auto-approve
+ 1692  terraform console 
+ 1693  git status
+ 1694  terraform workspace 
+ 1695  terraform workspace show
+ 1696  cd ../terraform-k8s/
+ 1697  terraform workspace show 
+ 1698  cd ../terraform-aws/
+ 1699  terraform apply --auto-approve
+ 1700  terraform destroy --auto-approve
+ 1701  terraform apply --auto-approve
+ 1702  export KUBECONFIG=../k3s-noweder_node-11552.yaml
+ 1703  kubectl get nodes
+ 1704  ls
+ 1705  kubectl create -f deployment.yaml 
+ 1706  kubectl get pods
+ 1707  git status
+ 1708  git add README.md compute/main.tf 
+ 1709  git commit -m "updated README"
+ 1710  git push
+ 1711  terraform destroy --auto-approve
+ 1712  terraform apply --auto-approve
+ 1713  export KUBECONFIG=../k3s-noweder_node-20359.yaml
+ 1714  kubectl get nodes
+ 1715  kubectl -h
+ 1716  terraform workspace show 
+ 1717  terraform apply -auto-approve
+ 1718  terraform apply -auto-approve
+ 1719  kubectl get nodes
+ 1720  export KUBECONFIG=../k3s-noweder_node-20359.yaml
+ 1721  kubectl get nodes
+ 1722  kubectl get nodes
+ 1723  kubectl get pods
+ 1724  terraform fmt -recursive
+ 1725  terraform validate 
+ 1726  terraform plan 
+ 1727  terraform apply -auto-approve
+ 1728  kubectl get nodes
+ 1729  kubectl get pods
+ 1730  kubectl get deployment
+ 1731  git status
+ 1732  git add -A
+ 1733  git status
+ 1734  git commit "modified locals.tf and created required files to deploy nodered, grafana, and influxdb"
+ 1735  git push
+ 1736  git commit -m "modified locals.tf and created required files to deploy nodered, grafana, and influxdb"
+ 1737  git push
+ 1738  ls
+ 1739  ls -la
+ 1740  vim README.md
+ 1741  git status
+ 1742  git add .
+ 1743  git commit -m "added README"
+ 1744  git push
+ 1745  terraform state list 
+ 1746  terraform state list 
+ 1747  terraform destroy -auto-approve
+ 1748  kubectl get node
+ 1749  kubectl get nodes
+ 1750  terraform destroy -auto-approve
+ 1751  git clone https://github.com/noweder/Terraform.git
+ 1752  cd Terraform/terraform-docker/
+ 1753  ls
+ 1754  terraform init 
+ 1755  ls -la
+ 1756  terraform apply --auto-approve
+ 1757  terraform workspace new prod
+ 1758  terraform workspace show 
+ 1759  terraform workspace new dev
+ 1760  terraform workspace show 
+ 1761  terraform apply -auto-approve
+ 1762  docker ps
+ 1763  curl 172.17.0.3:3100
+ 1764  curl 172.17.0.3:1980
+ 1765  curl 172.17.0.3:1880
+ 1766  curl 172.17.0.4:1880
+ 1767  curl 172.17.0.4:1980
+ 1768  curl 172.17.0.4:1880
+ 1769  terraform output 
+ 1770  172.17.0.2:8186
+ 1771  curl 172.17.0.2:8186
+ 1772  docker ps
+ 1773  terraform destroy -auto-approve
+ 1774  docker images
+ 1775  docker ps
+ 1776  docker ps
+ 1777  docker psp
+ 1778  docker ps
+ 1779  docker ps -a
+ 1780  docker ps -a -q
+ 1781  docker rmi $(docker ps -a -q)
+ 1782  docker ps -a -q
+ 1783  docker rmi $(docker images -q)
+ 1784  docker rm -f $(docker ps -a -q)
+ 1785  terraform destroy -auto-approve
+ 1786  terraform state list 
+ 1787  git status
+ 1788  git add -A
+ 1789  git commit -m "added README"
+ 1790  git push
+ 1791  c d~
+ 1792  cd ~
+ 1793  ls
+ 1794  cd environment/Testing-only/
+ 1795  ls
+ 1796  cd terraform-k8s/
+ 1797  terraform init
+ 1798  terraform apply -auto-approve
+ 1799  git status
+ 1800  git status
+ 1801  git add -A
+ 1802  git commit -m "added README"
+ 1803  git commit --amend
+ 1804  git commit --amend
+ 1805  git push
+ 1806  git add -A
+ 1807  git commit -m "updated README"
+ 1808  git push 
+ 1809  git add -A
+ 1810  git commit -m "updated README"
+ 1811  git push 
+ 1812  git status
+ 1813  git add -A
+ 1814  git commit -m "updated README"
+ 1815  git push
+ 1816  terraform apply -auto-approve
+ 1817  export KUBECONFIG=../k3s-noweder_node-15671.yaml
+ 1818  kubectl get nodes
+ 1819  kubectl get nodes
+ 1820  terraform init
+ 1821  terraform fmt -recursive
+ 1822  terraform validate 
+ 1823  terraform state list 
+ 1824  echo $KUBECONFIG
+ 1825  terraform apply -auto-approve
+ 1826  echo $KUBECONFIG
+ 1827  kubectl get nodes
+ 1828  terraform console 
+ 1829  terraform init 
+ 1830  terraform apply -auto-approve
+ 1831  terraform init 
+ 1832  terraform apply -auto-approve
+ 1833  terraform apply -auto-approve
+ 1834  kubectl get nodes
+ 1835  export KUBECONFIG=../k3s-noweder_node-15671.yaml
+ 1836  kubectl get nodes
+ 1837  kubectl get nodes
+ 1838  terraform destroy -auto-approve
+ 1839  echo $KUBECONFIG
+ 1840  unset $KUBECONFIG
+ 1841  echo $KUBECONFIG
+ 1842  unset KUBECONFIG
+ 1843  echo $KUBECONFIG
+ 1844  echo $KUBECONFIG
+ 1845  terraform init 
+ 1846  terraform apply 
+ 1847  kubectl get nodes
+ 1848  echo $KUBECONFIG
+ 1849  echo $KUBECONFIG
+ 1850  terraform console 
+ 1851  echo $KUBECONFIG
+ 1852  terraform apply 
+ 1853  terraform init 
+ 1854  terraform apply 
+ 1855  terraform apply 
+ 1856  echo $KUBECONFIG
+ 1857  kubectl get node
+ 1858  kubectl get nodes
+ 1859  terraform destroy 
+ 1860  terraform init 
+ 1861  terraform apply 
+ 1862  echo $KUBECONFIG
+ 1863  kubectl get nodes
+ 1864  terraform destroy 
+ 1865  terraform init 
+ 1866  terraform apply 
+ 1867  terraform init 
+ 1868  terraform apply 
+ 1869  kubectl get nodes
+ 1870  echo $KUBECONFIG
+ 1871  terraform state list 
+ 1872  terraform destroy -auto-approve
+ 1873  terraform init
+ 1874  terraform apply -auto-approve
+ 1875  kubectl get nodes
+ 1876  export KUBECONFIG=../k3s-noweder_node-15671.yaml
+ 1877  kubectl get nodes
+ 1878  kubectl get pods
+ 1879  terraform destroy -auto-approve
+ 1880  git status
+ 1881  git add -A
+ 1882  git commit -m "added datasources.tf"
+ 1883  git push
+ 1884  git add -A
+ 1885  git commit -m "updated README"
+ 1886  git push
+ 1887  terraform destroy -auto-approve
+ 1888  git clone https://github.com/derekops/terraform-aws-networking.git
+ 1889  ls
+ 1890  cd terraform-aws-networking/
+ 1891  rm -rf .git
+ 1892  ls
+ 1893  git init
+ 1894  git add .
+ 1895  git commit -m "initial"
+ 1896  git origin
+ 1897  git remote -v
+ 1898  git -h
+ 1899  git --help
+ 1900  git help -a
+ 1901  git remote --help
+ 1902  git branch -M main
+ 1903  git remote add origin https://github.com/noweder/terraform-aws-networking.git
+ 1904  git remote -v
+ 1905  git push -u origin main
+ 1906  ls
+ 1907  git add .
+ 1908  cd terraform-aws-networking/
+ 1909  git add .
+ 1910  git status
+ 1911  git commit -m "changed vpc cidr"
+ 1912  git push
+ 1913  ls
+ 1914  cd terraform-aws-networking/
+ 1915  git tag -a v1.0.0 -m "first version"
+ 1916  git tag
+ 1917  git push origin v1.0.0
+ 1918  cd ..
+ 1919  git clone https://github.com/derekops/terraform-aws-compute.git
+ 1920  cd terraform-aws-compute/
+ 1921  rm -rf .git
+ 1922  git init
+ 1923  git add .
+ 1924  git commit -m "first commit"
+ 1925  git branch -M main
+ 1926  git remote add origin https://github.com/noweder/terraform-aws-compute.git
+ 1927  git tag -a v1.0.0 -m "initial compute tag"
+ 1928  git push origin v1.0.0
+ 1929  git status
+ 1930  git branch main 
+ 1931  git branch --help
+ 1932  git branch --list
+ 1933  git branch --all
+ 1934  git push -u origin main
+ 1935  cd terraform-aws-compute/
+ 1936  ssh-keygen -t rsa
+ 1937  cat ~/.ssh/tfckey.pub 
+ 1938  cd ..
+ 1939  ls
+ 1940  cd mtc-control/
+ 1941  terraform init 
+ 1942  terraform plan 
+ 1943  terraform plan 
+ 1944  terraform plan 
+ 1945  terraform apply 
+ 1946  cd mtc-control/
+ 1947  terraform init 
+ 1948  terraform fmt -recursive
+ 1949  terraform validate 
+ 1950  cd mtc-control/
+ 1951  cd ..
+ 1952  cd noweder-control/
+ 1953  terraform init 
+ 1954  terraform plan 
+ 1955  terraform init 
+ 1956  terraform plan 
+ 1957  terraform apply --auto-approve
+ 1958  terraform destroy --auto-approve
+ 1959  history
+ 1960  history >> ../history_commands.txt 
